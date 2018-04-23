@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>!!Fun with Magma!! &#8212; PeridexisErrant&#39;s DF Walkthrough</title>
+    <link rel="stylesheet" href="../_static/dftext.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/df-icon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Trading for Fun and Profit" href="trading.html" />
+    <link rel="prev" title="Managing Dwarven Jobs" href="jobs-management.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="fun-with-magma">
+<h1><a class="toc-backref" href="#id4">!!Fun with Magma!!</a><a class="headerlink" href="#fun-with-magma" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial covers navigating the caverns, locating magma, and
+raising it to the surface for use. It builds on the fort from the DF
+Walkthrough Pack and picks up at the end of Chapter 9 of the DF
+Walkthrough.</p>
+<p>Note: Unless otherwise stated, this tutorial uses the Workflow utility
+for building items. We will also use the Quickfort utility during the
+pump stack construction process. All these utilities are bundled in
+the latest <a class="reference external" href="http://dffd.bay12games.com/file.php?id=7622">Starter Pack</a> maintained by PeridexisErrant.</p>
+<p>The save I used is <a class="reference external" href="http://dffd.bay12games.com/file.php?id=11179">DFFD file 11179</a>.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#fun-with-magma" id="id4">!!Fun with Magma!!</a><ul>
+<li><a class="reference internal" href="#delving-for-magma" id="id5">Delving for Magma</a></li>
+<li><a class="reference internal" href="#a-sea-of-fire" id="id6">A Sea of Fire</a></li>
+<li><a class="reference internal" href="#a-well-laid-foundation" id="id7">A Well-Laid Foundation</a></li>
+<li><a class="reference internal" href="#stacks-on-stacks" id="id8">Stacks on Stacks</a></li>
+<li><a class="reference internal" href="#deus-ex-machina" id="id9">Deus Ex Machina</a></li>
+<li><a class="reference internal" href="#tower-of-babel" id="id10">Tower of Babel</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="delving-for-magma">
+<h2><a class="toc-backref" href="#id5">Delving for Magma</a><a class="headerlink" href="#delving-for-magma" title="Permalink to this headline">¶</a></h2>
+<p>Welcome to the magma tutorial! Magma is an incredibly useful - and
+dangerous - substance in Dwarf Fortress. It eliminates much of the
+<span class="guilabel">fuel</span> needed for smelting and smithing, allows for mass
+production of steel, will burn your enemies to a crisp, and opens the
+possibility of creating infinite quantities of glass and clay objects.
+It also tends to light everything on <span class="guilabel">!!Fire!!</span>, melt
+important parts of your fortress, and is usually located inaccessibly
+deep underground. But if you put in the work and understand magma’s
+unique properties, you will discover how much fun magma adds to your
+fortress.</p>
+<p>First, we must locate magma on our map. Nearly all forts lack magma at
+the surface and in only a lucky few is it found above z-level -50.
+That means that we will have to dig deep to find it, through caverns
+full of unknown horrors. Mitigation of the risk posed by the caverns
+is essential, and the steps below outline important precautions to
+take as you delve into the depths of the world.</p>
+<ul class="simple">
+<li>Start by digging a <span class="guilabel">Down Stair</span> adjacent to the lowest
+part of our staircase.</li>
+<li>Place a <span class="guilabel">Floor Hatch</span> (<code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">H</span></code>) over the
+<span class="guilabel">Down Stair</span>.</li>
+</ul>
+<img alt="../_images/Magma-Tut-1_1-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_1-Delving-for-Magma.png" />
+<p>This small hatch will act as the final line of defense between
+anything that comes up from the caverns and our fortress. It will stop
+anything directly below it so long as we are able to
+<span class="guilabel">Forbid</span> the hatch in time.</p>
+<ul class="simple">
+<li>Assign a war dog to each of our Miners. Hit <code class="kbd docutils literal"><span class="pre">u</span></code>, highlight the
+first <span class="guilabel">Miner</span>, and hit <code class="kbd docutils literal"><span class="pre">z</span></code> to <span class="guilabel">Go to Unit</span>.
+Hit <code class="kbd docutils literal"><span class="pre">p</span></code>, <code class="kbd docutils literal"><span class="pre">e</span></code> to bring up a list of work animals and hit
+<code class="kbd docutils literal"><span class="pre">Enter</span></code> to select a <span class="guilabel">Stay war dog</span>.</li>
+<li>Note: If you’ve pastured your war dogs in a spare room as I have (to
+save a few FPS), be sure to un-pasture them or else they will not join
+their new owners.</li>
+<li>It’s a good idea to create a burrow at the <span class="guilabel">Hatch</span> in
+anticipation of stationing melee troops there. See DF Walkthrough
+Chapter 9.3 for instructions on using burrows to control troops.</li>
+<li>Speaking of melee troops, we have enough cannon fodder to fill the
+ranks of our two melee squads. Hit <code class="kbd docutils literal"><span class="pre">m</span></code> and top off the ranks with
+new draftees.</li>
+<li>Don’t forget to ensure that we have enough arms and armor to issue
+to the troops. A full set of armor includes a <span class="guilabel">helm</span>,
+<span class="guilabel">mail shirt</span>, <span class="guilabel">breastplate</span>, <span class="guilabel">gauntlet</span>
+(each job makes a pair), <span class="guilabel">greaves</span> (each job makes a pair),
+<span class="guilabel">high boot</span> (each job makes a pair), and a <span class="guilabel">shield</span>.</li>
+<li>Take a second to edit the squads’ schedules to respond to combat
+alert states with <span class="guilabel">10 minimum</span> soldiers. Hit <code class="kbd docutils literal"><span class="pre">m</span></code>,
+<code class="kbd docutils literal"><span class="pre">s</span></code>, select <span class="guilabel">Prim. Kllzn. Gallery</span> with
+<code class="kbd docutils literal"><span class="pre">/</span></code><code class="kbd docutils literal"><span class="pre">*</span></code>, and hit <code class="kbd docutils literal"><span class="pre">e</span></code>, <code class="kbd docutils literal"><span class="pre">*</span></code>, <code class="kbd docutils literal"><span class="pre">Shift+Enter</span></code>. Then
+hit <code class="kbd docutils literal"><span class="pre">c</span></code> to <span class="guilabel">Copy orders</span> and <code class="kbd docutils literal"><span class="pre">p</span></code> to paste them in
+for every month in each squad. Do the same thing for the other alerts,
+cycling between them with <code class="kbd docutils literal"><span class="pre">/</span></code><code class="kbd docutils literal"><span class="pre">*</span></code>.</li>
+<li>Finally, if you’re up for it, create a military squad manned
+only by your Miners, assign as a uniform a metal helm and mail shirt,
+and keep their schedule on <span class="guilabel">Inactive</span>. This will cause the
+miners to don some protective gear to increase their chances of
+surviving unexpected encounters.</li>
+</ul>
+<p>That’s about all we can do to up the odds when dealing with the
+caverns. It’s time to delve for magma. Dig a <span class="guilabel">U/D Stair</span>
+straight down from the <span class="guilabel">Hatch</span> as far as you can go, and see
+what happens.</p>
+<img alt="../_images/Magma-Tut-1_2-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_2-Delving-for-Magma.png" />
+<p>Welcome to the underworld.</p>
+<ul class="simple">
+<li>Make sure you keep the game paused for now. Hit <code class="kbd docutils literal"><span class="pre">Enter</span></code> to
+dismiss the first notification.</li>
+</ul>
+<img alt="../_images/Magma-Tut-1_3-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_3-Delving-for-Magma.png" />
+<p>These popups notify you of two distinct underground features. The
+first <span class="guilabel">expansive cavern deep underground</span> refers to this
+cavern layer itself. A <span class="guilabel">downward passage</span> is a rift that
+connects two or more cavern layers. The discovery of a downward
+passage is not good news for us because it gives things from deep
+below access to our fortress.</p>
+<p>Let’s assess the situation. Take a good look around the cavern using
+<code class="kbd docutils literal"><span class="pre">k</span></code>. Note the underground lake with giant mushroom trees growing
+in it, the muddy, farmable cavern floor, and the various wiggling
+things moving around. Take a look at one of the wiggling <span class="guilabel">{</span>
+things.</p>
+<img alt="../_images/Magma-Tut-1_4-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_4-Delving-for-Magma.png" />
+<p>It’s an olm, whatever that is. Notice that there’s no option to press
+<code class="kbd docutils literal"><span class="pre">Enter</span></code> to look closer at it like you could with, for example, a
+dog. Furthermore, hitting <code class="kbd docutils literal"><span class="pre">u</span></code> and scrolling over to
+<span class="guilabel">Others</span>, we see that there’s no mention of any
+<span class="guilabel">Olm</span>. We can’t even hit <code class="kbd docutils literal"><span class="pre">s</span></code> and order a squad to
+attack it on the map. We’ll find the same thing to be true for the
+frog-looking things in the water, called <span class="guilabel">cap hoppers</span>.</p>
+<p>Breathe a sigh of relief; these are just harmless vermin. In fact,
+looking at the <span class="guilabel">Others</span> tab on the <span class="guilabel">Units</span> screen,
+we only see a <span class="guilabel">Tiercel Peregrine</span> on the surface and a
+<span class="guilabel">Kea</span> that flew into a trap last season. Currently, there
+are no known hostiles anywhere on the map.</p>
+<p>Although we do not immediately see anything bent on our utter
+destruction, we lack line of sight on all parts of the cavern, not to
+mention whatever is at the bottom of the <span class="guilabel">downward passage</span>.
+Consequently we must close off access to the cavern before anything
+nasty shows up. Something unseen could be on its way up already,
+having sensed the minute change in pressure as long-closed stillness
+is disturbed by our miner’s pick.</p>
+<ul class="simple">
+<li>Keeping the game paused, find the <span class="guilabel">Up/Down Stairway</span>
+that’s been carved at the floor of the cavern.</li>
+</ul>
+<img alt="../_images/Magma-Tut-1_5-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_5-Delving-for-Magma.png" />
+<ul class="simple">
+<li>Go up one z-level, <span class="guilabel">Mine</span> one tile north, then dig an
+<span class="guilabel">Up stair</span> on the tile north of that.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">z</span></code> to <span class="guilabel">Remove Up Stairs/Ramps</span> on the existing
+<span class="guilabel">Up/Down Stair</span>.</li>
+<li>Connect our central staircase to the <span class="guilabel">Up stair</span>. Go up one
+z-level, hit <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">j</span></code>, and designate a <span class="guilabel">Down
+Stair</span> to be dug over the <span class="guilabel">Up stairs</span> below. Then, connect
+the <span class="guilabel">Down Stair</span> to your central staircase with a tunnel.</li>
+</ul>
+<img alt="../_images/Magma-Tut-1_6-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_6-Delving-for-Magma.png" />
+<img alt="../_images/Magma-Tut-1_7-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_7-Delving-for-Magma.png" />
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">x</span></code> and remove the dig up/down stair designation
+under the cavern floor. Leaving it there will cause a miner to merrily
+continue burrowing downward.</li>
+<li>Finally, amend the Inside burrow so dwarves don’t enter the caverns.
+Hit <code class="kbd docutils literal"><span class="pre">w</span></code>, highlight the <span class="guilabel">Inside</span> burrow, hit
+<code class="kbd docutils literal"><span class="pre">Enter</span></code>, <code class="kbd docutils literal"><span class="pre">r</span></code> to change to <span class="guilabel">Currently erasing</span>, and
+erase the Inside burrow for all of z-level -20 as well as for any
+parts of the cavern visible on other z-levels.</li>
+</ul>
+<p>The <span class="guilabel">Remove Up Stairs/Ramps</span> designation will leave us with
+only a downward stairway into the caverns. We must cover that up with
+a hatch and forbid it as quickly as possible to seal the cavern.
+Alternatively, we could build a floor over it with the closest
+available rock, so if you do not have a <span class="guilabel">Floor Hatch</span> on
+hand, that’s the best backup plan.</p>
+<ul class="simple">
+<li>Use <code class="kbd docutils literal"><span class="pre">.</span></code> to advance time tick by tick or unpause and repause in
+rapid succession. Advance time only long enough for the designations
+to be dug out.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">H</span></code> and place the <span class="guilabel">Floor Hatch</span> over
+the <span class="guilabel">Downward Stairway</span> leading to the caverns.</li>
+<li>Advance time only long enough for the hatch to be put in place, then
+immediately hit <code class="kbd docutils literal"><span class="pre">q</span></code>, <code class="kbd docutils literal"><span class="pre">l</span></code>, <code class="kbd docutils literal"><span class="pre">o</span></code> to <span class="guilabel">Forbid</span> it
+and set it to <span class="guilabel">Keep tightly closed</span>.</li>
+</ul>
+<img alt="../_images/Magma-Tut-1_8-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_8-Delving-for-Magma.png" />
+<p>If nothing came up from below, exhale and toast the dwarf who affixed
+that <span class="guilabel">Floor Hatch</span> because no creature can get through it so
+long as it remains <span class="guilabel">Forbidden</span>.</p>
+<p>The first cavern layer’s muddy floor would make excellent underground
+farms and there’s probably exotic things to trap down there, but for
+now we have to continue the magma hunt. Let’s find a pillar thick
+enough to run a stairwell bypass through and link it back up to the
+main stairwell under the cavern floor. I see an appropriate one just
+east of our main up/down stairwell.</p>
+<ul class="simple">
+<li>Designate an <span class="guilabel">U/D Stair</span> to be dug in the pillar west of
+the main up/down stairwell on the cavern layer, bypassing the cavern.</li>
+</ul>
+<img alt="../_images/Magma-Tut-1_9-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_9-Delving-for-Magma.png" />
+<ul class="simple">
+<li>Connect the bypass stairwell to our original Up/Down stairwell
+designation: go down one z-level and designate another <span class="guilabel">U/D
+Stair</span>, and under that, an <span class="guilabel">Up Stair</span>. Connect the
+<span class="guilabel">Up Stair</span> to the original Up/Down stairwell designation
+with a normal tunnel.</li>
+<li>Complete the connection by hitting <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">j</span></code> and
+re-designating the original Up/Down stairwell to be a <span class="guilabel">Down
+Stair</span></li>
+</ul>
+<img alt="../_images/Magma-Tut-1_10-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_10-Delving-for-Magma.png" />
+<ul class="simple">
+<li>Connect the bypass stairwell to the Up/Down stairwell leading to the
+fortress: go up one z-level from the bypass stairwell designation, hit
+<code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">j</span></code>, and designate a <span class="guilabel">Down Stair</span>. Then
+<span class="guilabel">Mine</span> straight west to link back up with the main Up/Down
+stairwell.</li>
+</ul>
+<img alt="../_images/Magma-Tut-1_11-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_11-Delving-for-Magma.png" />
+<ul class="simple">
+<li>After the digging is complete, put a <span class="guilabel">Floor Hatch</span> on
+every <span class="guilabel">Down Stairway</span> you can. These will act as additional
+buffers if something makes it in from below.</li>
+</ul>
+<p>Unpause the game and allow your miners to dig deeper. We are only at
+z-level -20; there’s a very long way still to go.</p>
+<img alt="../_images/Magma-Tut-1_12-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_12-Delving-for-Magma.png" />
+<img alt="../_images/Magma-Tut-1_13-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_13-Delving-for-Magma.png" />
+<p>We’ve hit a second cavern layer and another downward passage. Like
+before, keep the game paused until you set up your dig designations to
+secure the breach.</p>
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">u</span></code> and scroll to <span class="guilabel">Others</span> to see if there’s any
+immediate threats. Thankfully, nothing is immediately visible. There
+are lots of <span class="guilabel">bats</span>, though, which are icky. Better seal this
+up fast.</li>
+<li>Repeat the steps above to seal the stairwell. Remove the up stairs
+above the breached stairwell, dig upward stairs to reconnect with the
+stairwell, throw a hatch or floor over the breach, and bypass.</li>
+<li>Don’t forget to delete the sections of the <span class="guilabel">Inside</span>
+burrow, remove the dig designation under the cavern floor, and cover
+all downward staircases with a floor hatch.</li>
+</ul>
+<p>This time, I elect to construct a floor instead of installing a hatch
+because the stone was readily available and the closest hatch was 152
+tiles away.</p>
+<img alt="../_images/Magma-Tut-1_14-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_14-Delving-for-Magma.png" />
+<img alt="../_images/Magma-Tut-1_15-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_15-Delving-for-Magma.png" />
+<img alt="../_images/Magma-Tut-1_16-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_16-Delving-for-Magma.png" />
+<img alt="../_images/Magma-Tut-1_17-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_17-Delving-for-Magma.png" />
+<img alt="../_images/Magma-Tut-1_18-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_18-Delving-for-Magma.png" />
+<p>Nothing to do but continue to dig.</p>
+<img alt="../_images/Magma-Tut-1_19-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_19-Delving-for-Magma.png" />
+<p>Not long after the second cavern, we stumble into a third. As usual,
+hit <code class="kbd docutils literal"><span class="pre">u</span></code> and scroll over to <span class="guilabel">Others</span> to see if some
+miners are about to meet a bloody end.</p>
+<p>There’s a new creature on the <span class="guilabel">Others</span> list, a
+<span class="guilabel">Jabberer</span>. Hit <code class="kbd docutils literal"><span class="pre">v</span></code> to examine it.</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><span class="guilabel">A huge monster that lurks in caverns deep under the earth.</span></div>
+<div class="line"><span class="guilabel">It uses its wide beak to reach down and pluck up unsuspecting</span></div>
+<div class="line"><span class="guilabel">intruders.</span></div>
+</div>
+</div></blockquote>
+<p>Jabberers are terrifying. They are as big as elephants and much more
+aggressive, making a beeline to any exposed dwarf to rip it apart.
+Moreover, our military likely cannot take one down without suffering
+many casualties.</p>
+<p>Hit <code class="kbd docutils literal"><span class="pre">u</span></code> again, highlight the <span class="guilabel">Jabberer</span>, and hit
+<code class="kbd docutils literal"><span class="pre">z</span></code> to locate it on the map.</p>
+<img alt="../_images/Magma-Tut-1_20-Delving-for-Magma.png" class="align-center" src="../_images/Magma-Tut-1_20-Delving-for-Magma.png" />
+<p>It’s not far from the breach we made in the caverns, but it’s our
+lucky day - unlike the other breaches we made in the upper caverns
+that led directly onto the cavern floor, this one is in a rock pillar
+one z-level above the cavern floor. Unless the Jabberer can climb, it
+cannot path into the fortress.</p>
+<ul class="simple">
+<li>Pray to Armok that this Jabberer hasn’t been training its
+<span class="guilabel">climb</span> skill and make the usual designations to seal and
+bypass the cavern layer, remembering to place hatches and trim the
+<span class="guilabel">Inside</span> burrow.</li>
+<li>Keep an eye on the monster - place your cursor over it with <code class="kbd docutils literal"><span class="pre">v</span></code>
+and hit <code class="kbd docutils literal"><span class="pre">f</span></code> to <span class="guilabel">follow</span> it. If it starts moving toward
+the breach, we must immediately evacuate the up-down staircase and
+seal the floor hatches we’ve placed.</li>
+</ul>
+</div>
+<div class="section" id="a-sea-of-fire">
+<h2><a class="toc-backref" href="#id6">A Sea of Fire</a><a class="headerlink" href="#a-sea-of-fire" title="Permalink to this headline">¶</a></h2>
+<p>Let’s push further downward and locate that elusive magma. So far
+we’ve had no luck finding magma close to the surface, so we’ll
+continue mining down until we encounter signs of it.</p>
+<ul class="simple">
+<li>Reconnect the bypass staircase to the main up/down staircase,
+allowing your miners to continue downward.</li>
+<li>While we’re down in the depths of the world, hit <code class="kbd docutils literal"><span class="pre">H</span></code>,
+<code class="kbd docutils literal"><span class="pre">F3</span></code>, <code class="kbd docutils literal"><span class="pre">z</span></code> to create a hotkey to take us straight down here.
+Give it a name with <code class="kbd docutils literal"><span class="pre">n</span></code> - in a fit of creativity, I called it
+<span class="guilabel">Basement</span>.</li>
+</ul>
+<img alt="../_images/Magma-Tut-3_1-A-Sea-of-Fire.png" class="align-center" src="../_images/Magma-Tut-3_1-A-Sea-of-Fire.png" />
+<p>Bingo. The miners have stopped work because a tile designated to be
+mined was found to be warm to the touch. That means there is magma on
+the other side.</p>
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">d</span></code> so you can see the flashing yellow <span class="guilabel">☼</span>
+signifying <span class="guilabel">warm stone</span> and find the tile where the dig job
+was cancelled.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">x</span></code> and erase all remaining dig designations on that level
+and below it.</li>
+<li>Designate an up/down staircase on the cancelled tile. Let’s get a
+look at that magma.</li>
+</ul>
+<img alt="../_images/Magma-Tut-3_2-A-Sea-of-Fire.png" class="align-center" src="../_images/Magma-Tut-3_2-A-Sea-of-Fire.png" />
+<img alt="../_images/Magma-Tut-3_3-A-Sea-of-Fire.png" class="align-center" src="../_images/Magma-Tut-3_3-A-Sea-of-Fire.png" />
+<p>We’ve found what we’ve been looking for - the magma sea at the bottom
+of the world.</p>
+<img alt="../_images/Magma-Tut-3_4-A-Sea-of-Fire.png" class="align-center" src="../_images/Magma-Tut-3_4-A-Sea-of-Fire.png" />
+<p>Actually, we’ve found quite a bit more than what we’ve been looking
+for. <span class="guilabel">Adamantine</span> is the strongest, sharpest, and lightest
+metal in existence, but it requires special precautions to exploit.
+Adamantine is beyond the scope of this tutorial and can be very
+dangerous, so we’ll leave it alone and focus on working with magma.</p>
+<p>The magma sea is full of nasty critters, just like the caverns, so
+let’s seal it off until we’re prepared to deal with it on our own
+terms.</p>
+<ul class="simple">
+<li>Follow the same procedure as before, removing the up stairs, fixing
+a floor hatch or building a floor, and rerouting back to the main
+up/down staircase.</li>
+<li>If you get a warm stone cancellation, verify that you’re not digging
+into the magma sea itself and re-designate the tile to override it.</li>
+</ul>
+<p>Take some time to get acquainted with the magma sea and its
+inhabitants. Some parts are made of normal stone and others are
+<span class="guilabel">Semi-molten Rock</span>, which cannot be mined through.
+<span class="guilabel">Magma Crabs</span> are unpleasant crustaceans that spit fire,
+setting your dwarves alight. <span class="guilabel">Fire snakes</span> are vermin that
+normally keep to themselves but can cause problems if trapped - they
+are hotter even than magma, so when a dwarf transports a caged one to
+a stockpile, the cage burns away and looses the fire snake to ignite
+everything as it wiggles around.</p>
+<p>We didn’t risk the fortress dodging Jabberers and other forgotten
+horrors just to admire the view. The magma sea isn’t much good to us
+all the way down here. To harness magma’s potential, we need to raise
+it to the surface. We’ll do so by building a ‘pump stack.’</p>
+</div>
+<div class="section" id="a-well-laid-foundation">
+<h2><a class="toc-backref" href="#id7">A Well-Laid Foundation</a><a class="headerlink" href="#a-well-laid-foundation" title="Permalink to this headline">¶</a></h2>
+<p>A pump stack is a series of pumps stacked directly on top of one
+other, each alternating in orientation so that they pump liquid from
+bottom to top. The pumps can be operated by dwarves, but the extreme
+height of ours makes it more practical to use generated power. We must
+also consider the temperature of magma when building the pump stack,
+using only magma-safe materials whose melting point is higher than the
+temperature of magma.</p>
+<p>Before we start digging, it’s a good idea to start building the
+materials needed for a pump stack. A single <span class="guilabel">Screw Pump</span>
+(<code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">M</span></code>, <code class="kbd docutils literal"><span class="pre">s</span></code>), as the game calls it, is built with
+one <span class="guilabel">Block</span>, one <span class="guilabel">Enormous Corkscrew</span>, and one
+<span class="guilabel">Pipe Section</span>. Each of these must be made out of a
+magma-safe material or else the pump will deconstruct when it touches
+magma. Additionally, we will need a supply of magma-safe doors to seal
+the pumps’ output chambers.</p>
+<p>The <span class="guilabel">Blocks</span> and <span class="guilabel">Doors</span> can be made out of some
+kind of magma-safe rock, and I noticed that we have lots of
+<span class="guilabel">quartzite</span> available on the upper levels of our fortress.</p>
+<ul class="simple">
+<li>Stick three or more Mason’s Workshops in the quarry area at level
+-9. There is lots of quartzite already on the ground, but we probably
+will need to mine for more eventually.</li>
+<li>Streamline the production process by creating a quartzite-only
+stockpile around the Mason’s Workshopes. Hit <code class="kbd docutils literal"><span class="pre">p</span></code>, <code class="kbd docutils literal"><span class="pre">t</span></code> to
+create a custom stockpile that only allows <span class="guilabel">quartzite</span>. It’s
+found in the <span class="guilabel">Stone</span> -&gt; <span class="guilabel">Other Stone</span> submenu.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">q</span></code> over the quartzite stockpile, <code class="kbd docutils literal"><span class="pre">w</span></code>, and change the
+maximum wheelbarrows to 20.</li>
+<li>Speaking of which, hit <code class="kbd docutils literal"><span class="pre">j</span></code>, <code class="kbd docutils literal"><span class="pre">m</span></code>, <code class="kbd docutils literal"><span class="pre">q</span></code> and put in an
+order for 30 wooden wheelbarrows. Go to the Carpenter’s Workshop and
+cancel some of the bucket orders to make room in the queue.</li>
+<li>Configure the quartzite stockpile to <span class="guilabel">give to</span> the three
+Mason’s Workshops. Hit <code class="kbd docutils literal"><span class="pre">q</span></code> over the quartzite stockpile,
+<code class="kbd docutils literal"><span class="pre">g</span></code>, and <code class="kbd docutils literal"><span class="pre">Enter</span></code> over each Mason’s Workshop you just built.
+This is what you should see:</li>
+</ul>
+<img alt="../_images/Magma-Tut-4_1-Foundation.png" class="align-center" src="../_images/Magma-Tut-4_1-Foundation.png" />
+<p>Now, the only source that these workshops will use when executing jobs
+is the linked quartzite stockpile. This ensures that all products made
+here will be magma safe.</p>
+<ul class="simple">
+<li>At the three mason’s workshops, add orders for an additional 150
+<span class="guilabel">doors</span> and an additional 150 <span class="guilabel">blocks.</span> You will
+need to edit the current workflow ranges to accomplish this.</li>
+<li>Make sure to delete the orders for doors and blocks at the two
+Masons’ Workshops on z-level -5. Otherwise we may fall short of our
+magma-safe door and block targets.</li>
+</ul>
+<p>Magma-safe <span class="guilabel">Enormous Corkscrews</span> and <span class="guilabel">Pipe
+Sections</span> are more difficult to produce. We have two options - forge
+them from iron at a Metalsmith’s Forge, or make them from glass at a
+Glass Furnace. Although we have the infrastructure already in place to
+start making iron components, we shouldn’t expend our finite iron ore
+reserves on corkscrews and pipe sections. Each corkscrew takes one bar
+of iron to produce and each pipe section takes three, so making 127 of
+each out of iron would take 508 iron bars total! Glassmaking requires
+only sand, which is infinite, and 127 units of charcoal for fuel.
+Therefore, the glass option is clearly the better course of action.</p>
+<p>Let’s beef up our glass production facilities. Yellow sand is
+found on z-level -2, so that’s where we will locate our Glass Furnaces.</p>
+<ul class="simple">
+<li>Build a set of three Glass Furnaces to pump out <span class="guilabel">Screw
+Pump</span> components and another five to run <span class="guilabel">Collect Sand</span> jobs
+so that we have a steady supply. Here is my setup:</li>
+</ul>
+<img alt="../_images/Magma-Tut-4_2-Foundation.png" class="align-center" src="../_images/Magma-Tut-4_2-Foundation.png" />
+<ul class="simple">
+<li>Make sure to leave room for a <span class="guilabel">sand bag</span> stockpile near
+the producing Glass Furnaces. Sand bags are located at the bottom of
+the <span class="guilabel">Furniture/Siege Ammo</span> menu.</li>
+<li>On each of the three production Glass Furnaces, set up a production
+run of 150 <span class="guilabel">Make green glass tube</span> and <span class="guilabel">Make
+enormous green glass corkscrew</span>.</li>
+<li>On the five spare Glass Furnaces, order <span class="guilabel">Collect Sand</span> with
+a Workflow limit of 25-30 <span class="guilabel">powder of any sand</span>. It’s
+important to keep sand bags available or glass production will cease.</li>
+<li>Sand collection and storage requires lots of bags, so increase the
+workflow limit for bags at the Clothier’s Shop to 30-40.</li>
+<li>If the clothiers can’t keep up, we’ll have to resort to making
+leather bags and micromanaging the Farmer’s Workshop to supply our
+clothesmaking industry. For this reason, it’s also a good idea to
+clean out all traders of cloth and leather. Bags are critical to our
+magma ambitions!</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">i</span></code>, <code class="kbd docutils literal"><span class="pre">e</span></code>, fill the glass factory with a zone, and hit
+<code class="kbd docutils literal"><span class="pre">s</span></code> to designate the zone as a source of sand. The dwarves will
+now collect sand here.</li>
+</ul>
+<p>Now to expand our charcoal production capacity. Each operation at the
+Glass Furnaces burns a unit of fuel, and right now we have only a
+single Wood Furnace supplying the fort. Let’s build some more to keep
+up with the demand for charcoal.</p>
+<ul class="simple">
+<li>Place four new Wood Furnaces in our stockpile room close to the
+wood. We have a large excess of space in our Armor and Ammo
+stockpiles, so cut into those to make room for the Wood Furnaces.</li>
+<li>Queue up a <span class="guilabel">Make Charcoal</span> job in each and change the
+Workflow limits to 55-60. There’s currently plenty of excess wood
+laying around outside, but it never hurts to chop down more old growth
+forest. Wood stock is something we’ll need to keep an eye on.</li>
+</ul>
+<img alt="../_images/Magma-Tut-4_3-Foundation.png" class="align-center" src="../_images/Magma-Tut-4_3-Foundation.png" />
+<p>Let’s do something to mitigate the extreme distances involved in
+hauling the pump components. We’ll make a large stockpile midway to
+the magma sea to store our quartzite <span class="guilabel">doors</span>, quartzite
+<span class="guilabel">blocks</span>, glass <span class="guilabel">tubes</span>, and glass
+<span class="guilabel">enormous corkscrews</span>.</p>
+<ul class="simple">
+<li>Go down to z-level -60 and dig out three large rooms for our doors,
+tubes, and corkscrews, as well as some space for blocks which will be
+neatly packed into bins. We will need 150 of each, so size the rooms
+accordingly</li>
+<li>While you’re down here, hit <code class="kbd docutils literal"><span class="pre">H</span></code> and make a hotkey for this spot.</li>
+<li>I accidentally carved my way into the caverns at this point. If that
+happens to you, immediately wall up the breach (<code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">C</span></code>,
+<code class="kbd docutils literal"><span class="pre">w</span></code>) and modify the dig designation to leave at least a 1-tile
+wall between the caverns and fortress. Here’s my setup:</li>
+</ul>
+<img alt="../_images/Magma-Tut-4_4-Foundation.png" class="align-center" src="../_images/Magma-Tut-4_4-Foundation.png" />
+<p>You’ll end up with <span class="guilabel">marble</span>, <span class="guilabel">sphalerite</span>, and
+other detritus strewn everywhere. We need that space for our
+stockpiles, so let’s clear it:</p>
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">i</span></code> and designate a 1x1 tile zone in a corner of one of the
+rooms, <span class="guilabel">Place</span> it with <code class="kbd docutils literal"><span class="pre">Enter</span></code>.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">d</span></code> to make it a garbage dump. Hit <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">b</span></code>,
+<code class="kbd docutils literal"><span class="pre">d</span></code> and mark everything you dug out to be dumped.</li>
+</ul>
+<p>Let’s set up our stockpiles, starting with the quartzite doors.</p>
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">p</span></code>, <code class="kbd docutils literal"><span class="pre">t</span></code>, and use <code class="kbd docutils literal"><span class="pre">d</span></code> to disable everything in
+the first column. Everything should be dark gray.</li>
+<li>Navigate to <span class="guilabel">Furniture/Siege Ammo</span> and hit <code class="kbd docutils literal"><span class="pre">e</span></code>,
+<code class="kbd docutils literal"><span class="pre">b</span></code>. Move right to <span class="guilabel">Type</span> and press <code class="kbd docutils literal"><span class="pre">Enter</span></code> on
+<span class="guilabel">doors</span> so that it toggles to white.</li>
+<li>Move back to the middle column and navigate to
+<span class="guilabel">Stone/Clay</span>. Move to the right column and find
+<span class="guilabel">quartzite</span> (it helps to hit <code class="kbd docutils literal"><span class="pre">s</span></code> and start typing
+“quartzite”). Hit <code class="kbd docutils literal"><span class="pre">Enter</span></code> to toggle <span class="guilabel">quartzite</span> to white.</li>
+<li>We do not care about door quality, so navigate to the middle column,
+highlight <span class="guilabel">Core Quality</span>, and hit <code class="kbd docutils literal"><span class="pre">p</span></code> so that all core
+qualities are permitted in the stockpile. Do the same for
+<span class="guilabel">Total Quality</span> directly below.</li>
+<li>Your screen should look like this:</li>
+</ul>
+<img alt="../_images/Magma-Tut-4_5-Foundation.png" class="align-center" src="../_images/Magma-Tut-4_5-Foundation.png" />
+<ul class="simple">
+<li>Press <code class="kbd docutils literal"><span class="pre">Escape</span></code>. Now, we are designating a stockpile that will
+accept only <span class="guilabel">quartzite doors</span> of any quality. Place the
+stockpile in one of your 11x11 rooms.</li>
+</ul>
+<p>In the same way, create stockpiles for quartzite blocks, glass
+corkscrews, and glass tubes. Remember to start with everything
+disabled when setting the parameters. If you prefer, instead of
+starting with <code class="kbd docutils literal"><span class="pre">p</span></code>, <code class="kbd docutils literal"><span class="pre">t</span></code>, you can place the stockpiles first
+and use <code class="kbd docutils literal"><span class="pre">q</span></code> to edit the options. Below are sets of keystrokes
+certain to result in the proper stockpile in case you get lost, but
+it’s a good idea to figure it out on your own.</p>
+<ul class="simple">
+<li>Quartzite blocks: <code class="kbd docutils literal"><span class="pre">p</span></code>, <code class="kbd docutils literal"><span class="pre">t</span></code>, move to and hit <code class="kbd docutils literal"><span class="pre">d</span></code> on
+everything in the left column, move to <span class="guilabel">Bars/Blocks</span>,
+<code class="kbd docutils literal"><span class="pre">e</span></code>, <code class="kbd docutils literal"><span class="pre">b</span></code>, move to <span class="guilabel">Blocks: Stone/Clay</span>, move to
+<span class="guilabel">quartzite</span>, <code class="kbd docutils literal"><span class="pre">Enter</span></code>, <code class="kbd docutils literal"><span class="pre">Esc</span></code>, and place the
+stockpile.</li>
+<li>Glass corkscrews (located in <span class="guilabel">Trap Components</span>): <code class="kbd docutils literal"><span class="pre">p</span></code>,
+<code class="kbd docutils literal"><span class="pre">t</span></code>, disable everything with <code class="kbd docutils literal"><span class="pre">d</span></code>, move to
+<span class="guilabel">Weapons/Trap Comps</span>, <code class="kbd docutils literal"><span class="pre">e</span></code>, <code class="kbd docutils literal"><span class="pre">b</span></code>, move to
+<span class="guilabel">Trap Components</span>, move to <span class="guilabel">Enormous Corkscrews</span>,
+<code class="kbd docutils literal"><span class="pre">Enter</span></code>, move to <span class="guilabel">Other Materials</span>, move to
+<span class="guilabel">Green Glass</span>, <code class="kbd docutils literal"><span class="pre">Enter</span></code>, move to <span class="guilabel">Core
+Quality</span>, <code class="kbd docutils literal"><span class="pre">p</span></code>, move to <span class="guilabel">Total Quality</span>, <code class="kbd docutils literal"><span class="pre">p</span></code>,
+<code class="kbd docutils literal"><span class="pre">Escape</span></code>, and place the stockpile.</li>
+<li>Glass tubes (called <span class="guilabel">pipe sections</span> in
+<span class="guilabel">Furniture/Siege Ammo): :kbd:`p</span>, <code class="kbd docutils literal"><span class="pre">t</span></code>, disable
+everything with <code class="kbd docutils literal"><span class="pre">d</span></code>, move to <span class="guilabel">Furniture/Siege Ammo</span>,
+<code class="kbd docutils literal"><span class="pre">e</span></code>, <code class="kbd docutils literal"><span class="pre">b</span></code>, move to <span class="guilabel">Types</span>, move to <span class="guilabel">pipe
+section</span>, <code class="kbd docutils literal"><span class="pre">Enter</span></code>, move to <span class="guilabel">Other Materials</span>, move to
+<span class="guilabel">Green Glass</span>, <code class="kbd docutils literal"><span class="pre">Enter</span></code>, move to <span class="guilabel">Core
+Quality</span>, <code class="kbd docutils literal"><span class="pre">p</span></code>, move to <span class="guilabel">Total Quality</span>, <code class="kbd docutils literal"><span class="pre">p</span></code>,
+<code class="kbd docutils literal"><span class="pre">Escape</span></code>, and place the stockpile.</li>
+</ul>
+<p>There’s some housekeeping to do before we’re done with stockpile
+configuration. We have to disable quartzite doors, quartzite blocks,
+glass tubes, and glass corkscrews from our other stockpiles or else
+these products will wind up in our existing stockpiles instead of our
+new ones.</p>
+<ul class="simple">
+<li>Go to our main stockpile level on z-level -4. Hit <code class="kbd docutils literal"><span class="pre">q</span></code> over
+<span class="guilabel">Furniture Stockpile #24</span>, then <code class="kbd docutils literal"><span class="pre">s</span></code> to bring up the
+settings. Disable <span class="guilabel">quartzite</span> in the <span class="guilabel">Stone/Clay</span>
+menu and <span class="guilabel">Green Glass</span> in the <span class="guilabel">Other Materials</span>
+menu.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">q</span></code> over <span class="guilabel">Weapon Stockpile #18</span> to the west of
+the stairs. Hit <code class="kbd docutils literal"><span class="pre">s</span></code> and disable <span class="guilabel">green glass</span> in the
+<span class="guilabel">Other Materials</span> section.</li>
+<li>Go down one level and open the settings of <span class="guilabel">Furniture
+Stockpile #5</span> in the northeast. Disable <span class="guilabel">quartzite</span> in the
+<span class="guilabel">Stone/Clay</span> menu and <span class="guilabel">Green Glass</span> in the
+<span class="guilabel">Other Materials</span> menu.</li>
+<li>Staying on the same level, open the settings for
+<span class="guilabel">Bar/Block Stockpile #10</span> in the northwest. Disable
+<span class="guilabel">quartzite</span> in the <span class="guilabel">Blocks: Stone/Clay</span> menu. Now
+quartzite blocks will go only to the new block stockpiles on z-level
+-60.</li>
+</ul>
+</div>
+<div class="section" id="stacks-on-stacks">
+<h2><a class="toc-backref" href="#id8">Stacks on Stacks</a><a class="headerlink" href="#stacks-on-stacks" title="Permalink to this headline">¶</a></h2>
+<p>Let’s turn our attention to digging out the pump stack casing. First,
+we should go over pump operation in order to understand what we’re
+doing. A pump lifts liquids - water or magma - from the level below it
+up to its level. In the image below, water is pumped from the right to
+the left and is retained on the pump’s level.</p>
+<a class="reference external image-reference" href="http://dwarffortresswiki.org/Screw_pump"><img alt="../_images/Magma-Tut-5_1-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_1-Stacks.png" /></a>
+<p>A pump is 2x1 tiles large and operates under dwarf or generated power.
+One tile of the pump is impassible so as to retain the pumped liquid.
+The other is passable to allow a dwarf access to the pump. If we build
+a pump so that its passable tile rests not on a floor but atop the
+impassible tile of a pump below, the upper pump will transmit power
+downward to the lower pump. This power transmission property is the
+key to the pump stack’s utility because it allows us to stack an
+infinite number on top of one another.</p>
+<img alt="Side view of a pump stack" class="align-center" src="../_images/Magma-Tut-5_2-Stacks.png" />
+<img alt="Top view of a pump stack" class="align-center" src="../_images/Magma-Tut-5_3-Stacks.png" />
+<p>Orientation of pumps in a pump stack is critical. In the illustration
+above, notice how the bottom pump draws water from the channeled out
+tile adjacent to it, pumps it up to its level, and outputs the water
+on the other side. Consequently, the next pump up must be rotated 180
+degrees in order to draw from the output water of the first pump.</p>
+<p>Therefore, when digging out the casing for our pump stack, we have to
+ensure that:</p>
+<ul class="simple">
+<li>Each pump’s intake tile has been channeled out to allow access to
+the magma beneath it,</li>
+<li>Each pump’s passable tile has been channeled out to allow power
+transmission downward, and</li>
+<li>Dwarves can access the passable tile of the pump as well as the
+output tile for maintenance and installation.</li>
+</ul>
+<p>It helps to visualize what we need to do. The animation below outlines
+the pump stack construction process.</p>
+<img alt="../_images/Magma-Tut-5_4-Stacks.gif" class="align-center" src="../_images/Magma-Tut-5_4-Stacks.gif" />
+<p>We’ll use a modified design from the one above:</p>
+<img alt="Designated - Bottom" class="align-center" src="../_images/Magma-Tut-5_5-Stacks.png" />
+<div class="figure align-center" id="id1">
+<img alt="Designated - Top" src="../_images/Magma-Tut-5_6-Stacks.png" />
+<p class="caption"><span class="caption-text">Designated</span></p>
+</div>
+<img alt="Dug out - Bottom" class="align-center" src="../_images/Magma-Tut-5_7-Stacks.png" />
+<div class="figure align-center" id="id2">
+<img alt="Dug out - Top" src="../_images/Magma-Tut-5_8-Stacks.png" />
+<p class="caption"><span class="caption-text">Dug out</span></p>
+</div>
+<img alt="Populated - Bottom" class="align-center" src="../_images/Magma-Tut-5_9-Stacks.png" />
+<div class="figure align-center" id="id3">
+<img alt="Populated - Top" src="../_images/Magma-Tut-5_10-Stacks.png" />
+<p class="caption"><span class="caption-text">Populated</span></p>
+</div>
+<p>Some notes about the design:</p>
+<ul class="simple">
+<li>Our design incorporates !!Science!! to mitigate framerate loss. Pump
+stacks are notorious for plunging the game’s framerate into single
+digits, so we’ve used a 3x1 output zone for each pump instead of the
+previous illustrations’ 1x1 zone.</li>
+<li>The quartzite door blocks access to the output zone of each pump.
+When built, each must be forbidden and made pet impassible to prevent
+magma leaks.</li>
+<li>Unlike the rest of the pumps, the bottom-most pump in the stack must
+be placed on solid ground or a constructed floor. All subsequent pumps
+are built on top of one another due to the channeled-out portion of
+the casing. This allows power to be transmitted from above, but the
+downside is that if one pump deconstructs, all will fall apart.</li>
+</ul>
+<p>The first order of business is to locate a suitable vertical route for
+our pump stack. Including the outer walls, we need 6x7 tiles of space
+for our design. Let’s look for a solid 6x7 column of rock that runs
+from magma to open air.</p>
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">F3</span></code> and go down the rest of the way to the very bottom of
+your pump stack. Start moving up and see if any routes stand out. It’s
+best to keep the pump stack well away from the central staircase in
+order to dodge the upper levels’ bedrooms, quarry, and stockpile rooms.</li>
+<li>After ten minutes of scrolling up and down the map, I found a
+suitable route to the north of the central stairwell. Run an up/down
+stairway from z-level -1 to z-level -126 through the location marked
+on the screen shot below:</li>
+</ul>
+<img alt="../_images/Magma-Tut-5_11-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_11-Stacks.png" />
+<ul class="simple">
+<li>Connect it to the stockpiles at z-level -60.</li>
+<li>Dig out the first two layers of the pump stack casing. Make sure to
+only channel out the intake tile of the bottom-most layer, not the
+tile under the pump itself.</li>
+</ul>
+<img alt="../_images/Magma-Tut-5_12-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_12-Stacks.png" />
+<img alt="../_images/Magma-Tut-5_13-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_13-Stacks.png" />
+<p>Now, let’s dig out the magma intake pool below the bottom-most level
+of the pump stack. We will use <span class="guilabel">Fortifications</span> to keep out
+the magma creatures and channel from above to safely flood the intake
+pool.</p>
+<ul class="simple">
+<li>Dig an up stair below the pump stack staircase and then mine out one
+of the flatter sections to the north, leaving a two-tile wide wall
+between you and the magma pool.</li>
+<li>When the job is completed, <span class="guilabel">Smooth Stone</span> on western walls
+with <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">s</span></code>, then <span class="guilabel">Carve Fortifications</span> with
+<code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">F</span></code>. This is what it should look like completed:</li>
+</ul>
+<img alt="../_images/Magma-Tut-5_14-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_14-Stacks.png" />
+<ul class="simple">
+<li>We will flood the intake pool by channeling out its walls from
+above. Dig an access tunnel above the <span class="guilabel">Fortifications</span>.</li>
+<li>From the access tunnel level, channel out the tiles to the west of
+the <span class="guilabel">Fortifications</span>. Make sure not to channel out tiles
+that are not in front of fortifications or you’ll expose the fortress
+to the magma sea and wind up with flaming crabs in your basement.</li>
+</ul>
+<img alt="../_images/Magma-Tut-5_15-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_15-Stacks.png" />
+<ul class="simple">
+<li>The level below will flood with magma. Block off the access tunnel
+with a constructed wall to seal it.</li>
+</ul>
+<p>Now, let’s dig out the last 120 z-levels of the pump stack casing.</p>
+<img alt="../_images/Magma-Tut-5_16-Stacks.gif" class="align-center" src="../_images/Magma-Tut-5_16-Stacks.gif" />
+<p>Actually, let’s not. This may be the most tedious, mind-numbing task
+in any video game you’ll ever play. Fortunately, we have the Quickfort
+utility to do it all for us, and today is your lucky day - I’ve
+committed our pump stack design to a series of blueprints using the
+Picturefort utility so you don’t have to!</p>
+<ul class="simple">
+<li>Extract Pump Stack - Quickfort - DF Magma Tutorial.xlsx to a
+convenient location. We will use this file as a blueprint to dig the
+casing and place the pumps and doors.</li>
+<li>Run the Quickfort utility from the DF Starter Pack window, found in
+the Utilities tab.</li>
+<li>Quickfort will now take over your <code class="kbd docutils literal"><span class="pre">Alt</span></code> key in Dwarf Fortress.
+You can toggle Quickfort on/off at any time with <code class="kbd docutils literal"><span class="pre">Shift+Alt+Z</span></code> or
+exit it entirely with <code class="kbd docutils literal"><span class="pre">Shift+Alt+X</span></code>.</li>
+<li>Go back to the Dwarf Fortress window. Hit <code class="kbd docutils literal"><span class="pre">d</span></code> and place your
+cursor on the <span class="guilabel">Up/Down Staircase</span> on z-level -124, directly
+above the first two levels of pump stack casing.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">Alt+F</span></code> and open Pump Stack - Quickfort - DF Magma
+Tutorial.xlsx from the convenient location you extracted it to. Then
+select Pump Stack - Dig from the list on the left and click OK.</li>
+<li>Take a moment to read the Quickfort cursor tooltip, and then hit
+<code class="kbd docutils literal"><span class="pre">Alt+D</span></code> to execute the macro.</li>
+</ul>
+<img alt="../_images/Magma-Tut-5_17-Stacks.gif" class="align-center" src="../_images/Magma-Tut-5_17-Stacks.gif" />
+<p>Quickfort’s magic designates the dig squares for us automatically!
+Take a moment to appreciate how the old-timer Urists had to designate
+all this by hand. ‘You kids have it too easy,’ they’d tell ya, ‘makes
+ya soft and complacent!’ But we digress - let’s finish digging out the
+pump stack casing.</p>
+<p>Our macro has three steps - first it digs the ‘Lower’-type pump stack,
+then it moves up a level and digs the ‘Upper’-type pump stack, and
+finally moves up another level to be ready for the next operation. Our
+job is to ensure that we start each operation on a fresh, undesignated
+level. If we get the dig designations out of order, the pump stack
+will not work.</p>
+<ul class="simple">
+<li>We’ve designated two levels to be dug out so far, so place the
+cursor on the <span class="guilabel">Up/Down Stair</span> above the top level
+designated: z-level -122.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">d</span></code> to activate <span class="guilabel">Mine</span> mode, and hit
+<code class="kbd docutils literal"><span class="pre">Alt+D</span></code>. Quickfort will designate two levels to be dug out and
+spit the cursor out on the fresh layer above the top level designated.</li>
+<li>Ensure that the cursor is resting on the <span class="guilabel">Up/Down Stair</span>
+where Quickfort spit it out (just don’t move it). Hit <code class="kbd docutils literal"><span class="pre">Alt+D</span></code>
+again to execute another two levels.</li>
+<li>Continue hitting <code class="kbd docutils literal"><span class="pre">Alt+D</span></code> in this manner until we end up on
+z-level -1. Then, remove the dig designation created by Quickfort on
+z-level -1. We will save this level for power-related mechanical
+linkages.</li>
+<li>Finally, go back through each level and ensure that we haven’t made
+any mistakes. Check the dig designations against the patterns above.
+When you’re satisfied, unpause and let the miners get to work.</li>
+<li>If you get spammed with <span class="guilabel">Urist McPickaxe, Miner, cancels
+Dig: Inappropriate dig square</span>, just ignore it. Our design does not
+require babying to be dug out correctly.</li>
+<li>Finish the process by hitting <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">d</span></code>, and
+designating everything in the doorframes of the pump stack to be
+dumped. Loose stone in this area combined with the diagonal angles of
+our design can cause dwarves to suspend door construction.</li>
+</ul>
+<p>Placement of the pumps can be the most time-consuming part of building
+the pump stack. Each pump requires an Architect to ‘design’ it and
+then a Mechanic to put it together. To mitigate this, let’s install a
+<span class="guilabel">Gear Assembly</span> above the top of the pump stack. This will
+anchor it from above, allowing pumps to be built from above and below
+simultaneously, thereby halving the time required to complete the
+stack.</p>
+<p>An added benefit of two anchor points is that if one pump deconstructs
+due to, for example, accidentally being built from non-magma-safe
+materials, the entire stack shouldn’t also deconstruct for lack of a
+foundation.</p>
+<ul class="simple">
+<li>On z-level -1, channel out the tile leading to where the impassible
+tile of the pump below will be.</li>
+</ul>
+<img alt="../_images/Magma-Tut-5_18-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_18-Stacks.png" />
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">M</span></code>, <code class="kbd docutils literal"><span class="pre">g</span></code> and build two <span class="guilabel">Gear
+Assemblies</span> - one on solid ground adjacent to the channel and the
+second hanging over the channel. The hanging gear assembly is anchored
+by the one on solid ground next to it and therefore provides a
+foundation for pumps built below it.</li>
+</ul>
+<img alt="../_images/Magma-Tut-5_19-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_19-Stacks.png" />
+<p>It’s time to build the pumps and place the doors. We’ll do the first
+two levels manually to illustrate important considerations that need
+be taken and then use Quickfort to finish the stack.</p>
+<ul class="simple">
+<li>Go to the bottom of the pump stack, z-level -122.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">M</span></code>, <code class="kbd docutils literal"><span class="pre">s</span></code> to bring up the <span class="guilabel">Screw
+Pump</span> build panel.</li>
+</ul>
+<p>Recall that pumps have a passible tile and an impassible tile. The
+pumped liquid is output on the far side of the impassible tile.
+Therefore, each pump must be oriented so that the impassible tile
+forms a seal on the 3x1 output chamber. Use
+<code class="kbd docutils literal"><span class="pre">u</span></code><code class="kbd docutils literal"><span class="pre">m</span></code><code class="kbd docutils literal"><span class="pre">k</span></code><code class="kbd docutils literal"><span class="pre">h</span></code> to orient the pump so that the dark
+green impassible tile is adjacent to the 3x1 output chamber. It should
+look like this:</p>
+<img alt="../_images/Magma-Tut-5_20-Stacks.png" class="align-center" src="../_images/Magma-Tut-5_20-Stacks.png" />
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">Enter</span></code>.</li>
+<li>Make absolutely sure you choose only magma-safe components made from
+magma-safe materials! Otherwise, the whole stack will fall apart the
+instant it’s activated. Use only <span class="guilabel">quartzite blocks</span>,
+<span class="guilabel">enormous green glass corkscrews</span>, and <span class="guilabel">green
+glass tubes</span>.</li>
+<li>Finish it off by placing a <span class="guilabel">quartzite door</span> in the tile
+between the <span class="guilabel">Up/Down Staircase</span> and the 3x1 output chamber.
+When we turn on the stack, we will make sure these doors are locked
+tight.</li>
+<li>Go to the next level and build another setup in the same manner, but
+with the pump turned 180 degrees so that the impassible tile seals the
+3x1 output chamber.</li>
+</ul>
+<p>Keep going if you want - it helps to do a few levels manually to
+really understand why a pump stack works. When you’re ready, let’s
+finish building with Quickfort.</p>
+<p>First, delete the Workflow orders for glass tubes, corkscrews,
+quartzite blocks, and quartzite doors. We don’t want to keep producing
+these as they are used to construct the pump stack, and the number of
+items in the game impacts framerate.</p>
+<p>Quickfort does not yet permit manual material selection - whatever is
+first on the list is used when build orders are put in, and the
+materials are sorted only by distance. That opens the possibility that
+we could unknowingly use a non magma-safe door or block in our pump
+stack. Therefore, we need to forbid all non-quartzite doors and blocks.</p>
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">z</span></code> and select the <span class="guilabel">Stocks</span> panel. Go down to
+<span class="guilabel">doors</span>, move to the right section of the screen, and press
+<code class="kbd docutils literal"><span class="pre">f</span></code> on all non-quartzite doors listed.</li>
+<li>Do the same for blocks.</li>
+<li>We can check our success by starting to build a pump/door and
+verifying that quartzite is the only option for either.</li>
+<li>Build the pump stack using Quickfort. Ensure that you start on a
+‘Lower’-type level with the 3x1 output chamber to the right.</li>
+<li>Hit <code class="kbd docutils literal"><span class="pre">Alt+F</span></code>, load Pump Stack - Quickfort - DF Magma
+Tutorial.xlsx, and select Pump Stack - Build from the menu on the left.</li>
+<li>Read the tooltip instructions, hit <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">o</span></code>, place the
+cursor on the pump stack’s <span class="guilabel">Up/Down Staircase</span>, and hit
+<code class="kbd docutils literal"><span class="pre">Alt+D</span></code>.</li>
+<li>When the Quickfort macro spits us out on the next level after
+executing the build commands, hit <code class="kbd docutils literal"><span class="pre">Alt+D</span></code> again, and repeat until
+all pumps and doors are placed.</li>
+<li>Verify that the pumps and doors are placed correctly, then unpause
+and let the dwarves get to work.</li>
+</ul>
+</div>
+<div class="section" id="deus-ex-machina">
+<h2><a class="toc-backref" href="#id9">Deus Ex Machina</a><a class="headerlink" href="#deus-ex-machina" title="Permalink to this headline">¶</a></h2>
+<p>Now that everything is built, we must devise a way to power the pump
+stacks. We have 124 pumps to drive, each using 10 power, for a total
+of 1240 required power. Additionally, the mechanical linkages
+necessary to transmit all that power push our power generation needs
+well above 1500.</p>
+<p>We’ll use <span class="guilabel">Water Wheels</span> for power generation.
+Unsurprisingly, these require flowing water. The only natural flowing
+water on the map is the river in the northwest, which is exposed to
+invaders. Another option is to create an artificial underground river
+that empties into the caverns, but these only work well with low-flow
+sources like aquifers (that’s right - aquifers are useful!).
+Unfortunately, the high flow rate of our river will overwhelm the game’s
+water flow model in an artificial channel, resulting in no power.</p>
+<p>We will install about 30 <span class="guilabel">Water Wheels</span> (<code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">M</span></code>,
+<code class="kbd docutils literal"><span class="pre">w</span></code>) along the river. This almost certainly is overkill - 17
+would probably be fine, but more power never hurts and we have tons of
+wood.</p>
+<ul class="simple">
+<li>A water wheel requires a stable foundation adjacent to it, so first
+build a <span class="guilabel">Gear Assembly</span> on the river bank.</li>
+<li>Each water wheel can support additional ones constructed adjacent to
+it, so build more water wheels across the river. Construct floors as
+needed to reach these.</li>
+<li>Make three or four sets of water wheels.</li>
+<li>Connect the gear assemblies with <span class="guilabel">Horizontal Axles</span>
+(<code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">M</span></code>, <code class="kbd docutils literal"><span class="pre">h</span></code>).</li>
+</ul>
+<p>Here is what I came up with. It generates more than 3500 power, plenty
+for our purposes!</p>
+<img alt="../_images/Magma-Tut-6_1-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_1-Deus-Ex-Machina.png" />
+<p>Let’s transmit all this power to our pump stack by means of
+<span class="guilabel">Horizontal Axles</span>, <span class="guilabel">Vertical Axles</span>, and
+<span class="guilabel">Gear Assemblies</span>. Doing so means creating a permanent
+opening in our fortress, so we’ll have to build walls to deter invaders.</p>
+<ul class="simple">
+<li>Find the two gear assemblies at the top of the pump stack. Dig a
+tunnel ten or so tiles north, then dig an <span class="guilabel">Upward Ramp</span>
+(<code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">r</span></code>).</li>
+<li>Remove the ramp when it’s dug out. In its place, build a
+<span class="guilabel">Gear Assembly</span>.</li>
+</ul>
+<p>We’ll now have a hole in our fortress that we cannot plug - the space
+will be occupied by a <span class="guilabel">Vertical Axle</span>. Let’s build a small
+tower around it to mitigate the danger. It’s a great idea to add traps
+as well. Here’s a design I came up with (the access stairs will be
+removed after axle and gear installation):</p>
+<img alt="../_images/Magma-Tut-6_2-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_2-Deus-Ex-Machina.png" />
+<img alt="../_images/Magma-Tut-6_3-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_3-Deus-Ex-Machina.png" />
+<p>Let’s build a series of axles and gear assemblies to transmit power to
+the pump stack. Use <span class="guilabel">Gear Assemblies</span> for junctions,
+<span class="guilabel">Horizontal Axles</span> to connect power on the same z-level, and
+<span class="guilabel">Vertical Axles</span> to connect between the z-levels. Always
+build from the bottom up, as well.</p>
+<ul class="simple">
+<li>Start by building a <span class="guilabel">Vertical Axle</span> over the channeled-out
+over the underground gear assembly in our tower.</li>
+<li>One z-level above that, build a <span class="guilabel">Gear Assembly</span>.</li>
+<li>Remember: build from bottom up - determine the path of the axle
+leading out over the tower, then build a <span class="guilabel">Gear Assembly</span> on
+the ground outside it to transmit the power over the walls.</li>
+<li>Go up a z-level and build a <span class="guilabel">Gear Assembly</span> on top of that one.</li>
+<li>Connect the two upper gear assemblies with a <span class="guilabel">Horizontal Axle</span>.</li>
+<li>Connect the <span class="guilabel">Gear Assembly</span> on the ground outside the
+tower to the water wheel power plant. Cut down any trees that stand in
+your way.</li>
+<li>When the machinery is completed, remove (<code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">n</span></code>) the
+access stairs on the tower.</li>
+</ul>
+<p>We must also devise a way to turn off power to the pump stack. Let’s
+connect a <span class="guilabel">Lever</span> to the <span class="guilabel">Gear Assembliy</span> below
+the tower. Pulling it will disengage the gear assembly and break the
+‘chain’ of power to the pumps. Just be sure not to hook the lever to
+the supporting gear assembly to the south of the pump stack gear -
+disconnecting that one may cause the pump stack to collapse for sudden
+lack of a foundation.</p>
+<ul class="simple">
+<li>After connecting the lever to the gear assembly, <span class="guilabel">Pull the
+Lever</span> to disengage the gear. We don’t want to pump magma before we
+decide where it will go!</li>
+<li>Complete the power linkage with a <span class="guilabel">Horizontal Axle</span>
+leading from the disengaged gear assembly to the gear assembly atop
+the pump stack.</li>
+</ul>
+<p>Here is an overview of the setup I devised:</p>
+<img alt="../_images/Magma-Tut-6_4-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_4-Deus-Ex-Machina.png" />
+<img alt="../_images/Magma-Tut-6_5-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_5-Deus-Ex-Machina.png" />
+<img alt="../_images/Magma-Tut-6_6-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_6-Deus-Ex-Machina.png" />
+<img alt="../_images/Magma-Tut-6_7-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_7-Deus-Ex-Machina.png" />
+<img alt="../_images/Magma-Tut-6_8-Deus-Ex-Machina.png" class="align-center" src="../_images/Magma-Tut-6_8-Deus-Ex-Machina.png" />
+<p>With power connected, the only thing we have left to do is dig tunnels
+to direct the pumped magma and throw the master power lever.</p>
+</div>
+<div class="section" id="tower-of-babel">
+<h2><a class="toc-backref" href="#id10">Tower of Babel</a><a class="headerlink" href="#tower-of-babel" title="Permalink to this headline">¶</a></h2>
+<p>Magma has a wide range of applications, but for now, I’ve dug out a
+massive magma-powered factory that will handle all smelting, forging,
+glassmaking, and kiln operations of the fortress. The specific layout
+of your magma infrastructure is completely up to you! Perhaps you’d
+rather build a magma weapon?</p>
+<img alt="../_images/Magma-Tut-7_1-Tower-of-Babel.png" class="align-center" src="../_images/Magma-Tut-7_1-Tower-of-Babel.png" />
+<img alt="../_images/Magma-Tut-7_2-Tower-of-Babel.png" class="align-center" src="../_images/Magma-Tut-7_2-Tower-of-Babel.png" />
+<p>Before activating our pump stack, it’s a good idea to
+<span class="guilabel">Forbid</span> and <span class="guilabel">Keep Tightly Closed</span> the doors on
+each level of the stack. Otherwise, a cat or child will open one and
+run flaming throughout the fortress, igniting everything and
+horrifying everyone.</p>
+<p>With that done, it’s time to turn it all on!</p>
+<ul class="simple">
+<li>Verify that no one is in the magma tubes. Pumps work fast and leave
+little time to get away. Use <code class="kbd docutils literal"><span class="pre">d</span></code>, <code class="kbd docutils literal"><span class="pre">o</span></code>, <code class="kbd docutils literal"><span class="pre">r</span></code> to restrict
+access if necessary.</li>
+<li>Throw the master power lever and cross your fingers!</li>
+</ul>
+<img alt="../_images/Magma-Tut-7_3-Tower-of-Babel.png" class="align-center" src="../_images/Magma-Tut-7_3-Tower-of-Babel.png" />
+<p>The magma flows! It’s working! And our frames per second is in the
+teens! Turn off the pumps to fix that, by the way.</p>
+<p>Surface magma is the key to true mass production of steel, glass, and
+clay products. We can also weaponize it to burn our enemies into
+<span class="guilabel">Piles of Ash</span> (see :wiki:` magma mist &lt;Magma_mist&gt;`),
+combine it with water to create <span class="guilabel">obsidian</span>, or make
+an awesome magma moat. Let’s start by relocating our smelting,
+forging, glassmaking, and kilns to the magma factory floor and setting
+up steel production.</p>
+<ul class="simple">
+<li>Hit <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">e</span></code> to find the <span class="guilabel">Magma Smelter</span>,
+<span class="guilabel">Magma Glass Furnace</span>, and <span class="guilabel">Magma Kiln</span>. The
+<span class="guilabel">Magma Forge</span> is built with <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">w</span></code>, <code class="kbd docutils literal"><span class="pre">v</span></code>.</li>
+<li>Create more magma-safe materials for these workshops if you run short.</li>
+<li>Each magma-powered workshop requires a channeled-out tile leading to
+the magma below. For maximum safety, plan out your channeling so that
+the workshops’ impassible tiles cover the exposed magma.</li>
+<li>Delete the old smelters and forges - they are obsolete now.</li>
+</ul>
+<p>Below is an example layout for steel production using magma-powered
+workshops. I connected the various stockpiles to the appropriate
+workshops, but that’s not strictly necessary and may be more trouble
+than it’s worth. I also dug an additional magma tunnel to accommodate
+a lower level dedicated to magma forges. The new magma tunnel doubles
+as a trap, too!</p>
+<img alt="../_images/Magma-Tut-7_4-Tower-of-Babel.png" class="align-center" src="../_images/Magma-Tut-7_4-Tower-of-Babel.png" />
+<img alt="../_images/Magma-Tut-7_5-Tower-of-Babel.png" class="align-center" src="../_images/Magma-Tut-7_5-Tower-of-Babel.png" />
+<img alt="../_images/Magma-Tut-7_6-Tower-of-Babel.png" class="align-center" src="../_images/Magma-Tut-7_6-Tower-of-Babel.png" />
+<p>This is just the beginning of magma’s possibilities! I decided to
+start converting my outdoor garden to a greenhouse with the addition
+of a roof made from <span class="guilabel">Clear Glass</span> blocks. No more pesky
+goblins digging in my potatoes!</p>
+<img alt="../_images/Magma-Tut-7_7-Tower-of-Babel.png" class="align-center" src="../_images/Magma-Tut-7_7-Tower-of-Babel.png" />
+<p>My steel production is coming along so well that I’ve had to clear cut
+the entire map of trees, too. What fun! Once my squads are outfitted,
+I plan on taking control of the caverns and maybe mining the
+Adamantine pillar we found in the magma sea.</p>
+<p>Good luck with your own magma-fueled adventures and congratulations on
+completing this tutorial! If you have a chance, I hope you post your
+volcanic contraptions and resulting Fun on the Bay 12 forums. Praise
+Armok and strike the earth!</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">Learning (and losing) can be fun!</p>
+
+
+
+
+
+
+
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">!!Fun with Magma!!</a><ul>
+<li><a class="reference internal" href="#delving-for-magma">Delving for Magma</a></li>
+<li><a class="reference internal" href="#a-sea-of-fire">A Sea of Fire</a></li>
+<li><a class="reference internal" href="#a-well-laid-foundation">A Well-Laid Foundation</a></li>
+<li><a class="reference internal" href="#stacks-on-stacks">Stacks on Stacks</a></li>
+<li><a class="reference internal" href="#deus-ex-machina">Deus Ex Machina</a></li>
+<li><a class="reference internal" href="#tower-of-babel">Tower of Babel</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, PeridexisErrant.
+      
+      |
+      <a href="../_sources/tutorials/magma-tutorial.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

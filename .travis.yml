@@ -1,0 +1,11 @@
+language: python
+python:
+  - "2.7"
+  - "3.5"
+install: pip install sphinx
+script:
+  - python misc/lint.py
+  - make html
+sudo: false
+notifications:
+  email: false

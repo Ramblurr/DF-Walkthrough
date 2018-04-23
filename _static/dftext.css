@@ -1,0 +1,99 @@
+/* make sure to sync this with the base theme's css filename */
+@import url("alabaster.css");
+.kbd {
+  /* Keybinding CSS from the DF wiki; applies to :kbd:`` directives.
+ * Use this directive for all keypresses, to make them look like keys.
+ */
+  border: 1px solid #aaa;
+  border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  -o-border-radius: 0.2em;
+  -ms-border-radius: 0.2em;
+  -moz-box-shadow: 0.1em 0.2em 0.2em #ddd;
+  -webkit-box-shadow: 0.1em 0.2em 0.2em #ddd;
+  box-shadow: 0.1em 0.2em 0.2em #ddd;
+  background-color: #f9f9f9;
+  background-image: -moz-linear-gradient(top, #eee, #f9f9f9, #eee);
+  background-image: -o-linear-gradient(top, #eee, #f9f9f9, #eee);
+  background-image: -webkit-linear-gradient(top, #eee, #f9f9f9, #eee);
+  background-image: linear-gradient(to bottom, #eee, #f9f9f9, #eee);
+  padding: 0.1em 0.3em;
+  font-family: sans-serif;
+  font-size: 0.8em; }
+
+@font-face {
+  font-family: cp437;
+  src: url("cp437.ttf"); }
+
+.guilabel {
+  /* In-game text CSS from the DF wiki; applies to :guilabel:`` directives.
+ * Use this for any text from an in-game announcement or menu.
+ */
+  color: #CBC7C0;
+  font-family: cp437, 'fixedsys', monospace;
+  background: #000000;
+  font-size: 0.95em;
+  padding: 0.05em 0.4em; }
+
+.highlight-none,
+.highlight-none .highlight,
+.highlight-none .highlight pre {
+  background: #000000; }
+
+.highlight-none .highlight pre {
+  color: #CBC7C0;
+  font-family: cp437, 'fixedsys', monospace;
+  font-size: 0.95em;
+  padding: 0.05em 0.4em; }
+
+.figure {
+  margin-bottom: 24px; }
+
+.figure p.caption {
+  font-style: italic; }
+
+.figure.align-cener {
+  text-align: center; }
+
+.note .last, .attention .last, .caution .last, .danger .last, .error .last, .hint .last, .important .last, .tip .last, .warning .last, .seealso .last, .admonition-todo .last {
+  margin-bottom: 0; }
+
+.document .admonition {
+  border: none;
+  box-sizing: border-box; }
+  .document .admonition p.admonition-title {
+    font-size: larger;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    color: #fff;
+    margin: -12px;
+    margin-bottom: -12px;
+    padding: 6px 12px;
+    margin-bottom: 12px; }
+    .document .admonition p.admonition-title:before {
+      margin-right: 4px; }
+
+.document .note, .document .attention, .document .caution, .document .danger, .document .error, .document .hint, .document .important, .document .tip, .document .warning, .document .seealso, .document .admonition-todo {
+  padding: 12px;
+  line-height: 24px;
+  margin-bottom: 24px; }
+
+.document .note p:last-child, .document .attention p:last-child, .document .caution p:last-child, .document .danger p:last-child, .document .error p:last-child, .document .hint p:last-child, .document .important p:last-child, .document .tip p:last-child, .document .warning p:last-child, .document .seealso p:last-child, .document .admonition-todo p:last-child {
+  margin-bottom: 0; }
+
+.document .note {
+  background: #e7f2fa; }
+  .document .note .admonition-title {
+    background: #53a2db; }
+
+.document .attention, .document .caution, .document .warning {
+  background: #ffedcc; }
+  .document .attention .admonition-title, .document .caution .admonition-title, .document .warning .admonition-title {
+    background: #ffae1a; }
+
+.document .tip, .document .important, .document .hint {
+  background: #dbfaf4; }
+  .document .tip .admonition-title, .document .important .admonition-title, .document .hint .admonition-title {
+    background: #1abc9d; }

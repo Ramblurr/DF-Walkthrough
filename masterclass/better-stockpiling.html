@@ -1,0 +1,481 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Better Stockpiling &#8212; PeridexisErrant&#39;s DF Walkthrough</title>
+    <link rel="stylesheet" href="../_static/dftext.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/df-icon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Use of Minecarts" href="minecart-education.html" />
+    <link rel="prev" title="Training Archers" href="archery-training.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="better-stockpiling">
+<h1><a class="toc-backref" href="#id14">Better Stockpiling</a><a class="headerlink" href="#better-stockpiling" title="Permalink to this headline">¶</a></h1>
+<p>This masterlclass was originally researched and written by Mechanixm. Ramblurr
+has helped edit, update, and format it for the DF Walthrough Masterclass series.</p>
+<p>Source:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.reddit.com/r/dwarffortress/comments/2k0zb3">Mechanixm’s Guide to Better Stockpiling: Part 1 - Intro to Quantum Stockpiling</a></li>
+<li><a class="reference external" href="https://www.reddit.com/r/dwarffortress/comments/2kuvs1">Mechanixm’s Guide to Better Stockpiling: Part 2 - The Five Primary Stockpiles</a></li>
+<li><a class="reference external" href="https://www.reddit.com/r/dwarffortress/comments/2n9p3u">Mechanixm’s Guide to Better Stockpiling: Part 3 - Useful Custom Stockpiles</a></li>
+</ul>
+<img alt="../_images/archery01.gif" class="align-center" src="../_images/archery01.gif" />
+<p>Stockpiling is an essential part of the game, and is an area that I think can
+be improved upon for both veteran and new players alike. There exists simple
+guides that explain the more complicated aspects of stockpiling, but nothing
+that really shows in detail, with pictures, the step by step process to create
+them yourself. This masterclass will try to accomplish that and to make it as clear
+as possible for all to understand and create.</p>
+<p>This masterclass is presented in a way that you can follow along and implement
+it in your fortress as you work through the guide.</p>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#better-stockpiling" id="id14">Better Stockpiling</a><ul>
+<li><a class="reference internal" href="#part-1-intro-to-quantum-stockpiling" id="id15">Part 1 - Intro to Quantum Stockpiling</a><ul>
+<li><a class="reference internal" href="#the-quantum-stockpile" id="id16">The Quantum Stockpile</a></li>
+<li><a class="reference internal" href="#the-minecart-quantum-stockpile" id="id17">The Minecart Quantum Stockpile</a></li>
+<li><a class="reference internal" href="#two-simple-variations-of-the-minecart-quantum-stockpile" id="id18">Two Simple Variations of the Minecart Quantum Stockpile</a></li>
+<li><a class="reference internal" href="#example-1-creating-a-heavy-items-minecart-quantum-stockpile" id="id19">Example 1: Creating a Heavy Items Minecart Quantum Stockpile</a><ul>
+<li><a class="reference internal" href="#prepare-a-heavy-items-mqs-for-stone" id="id20">1. Prepare a Heavy Items <abbr title="Minecart Quantum Stockpile">MQS</abbr> for Stone</a></li>
+<li><a class="reference internal" href="#create-the-stone-hauling-route" id="id21">2. Create the Stone Hauling Route</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example-2-creating-a-light-items-minecart-quantum-stockpile" id="id22">Example 2: Creating a Light Items Minecart Quantum Stockpile</a><ul>
+<li><a class="reference internal" href="#prepare-a-light-mqs-for-wood" id="id23">1. Prepare a Light <abbr title="Minecart Quantum Stockpile">MQS</abbr> for Wood</a></li>
+<li><a class="reference internal" href="#create-the-wood-hauling-route" id="id24">2. Create the Wood Hauling Route</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#name-your-quantum-stockpiles-using-dfhack" id="id25">Name Your Quantum Stockpiles Using DFHack</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#part-2-the-five-primary-stockpiles" id="id26">Part 2 - The Five Primary Stockpiles</a></li>
+<li><a class="reference internal" href="#part-3-useful-custom-stockpiles" id="id27">Part 3 - Useful Custom Stockpiles</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="part-1-intro-to-quantum-stockpiling">
+<h2><a class="toc-backref" href="#id15">Part 1 - Intro to Quantum Stockpiling</a><a class="headerlink" href="#part-1-intro-to-quantum-stockpiling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-quantum-stockpile">
+<h3><a class="toc-backref" href="#id16">The Quantum Stockpile</a><a class="headerlink" href="#the-quantum-stockpile" title="Permalink to this headline">¶</a></h3>
+<p><strong>So what’s a Quantum Stockpile and why is using them a good idea?</strong></p>
+<p>From <a class="reference external" href="http://dwarffortresswiki.org/Quantum_stockpile">the wiki</a>:</p>
+<blockquote>
+<div><p>Quantum Stockpiles (QSPs) allow you to store an infinite number
+of items in a single tile. QSPs can make for super efficient storage, allowing
+more compact fortresses, shorter hauling routes, more efficient manufacturing
+flows, stocktaking at a glance with look (<code class="kbd docutils literal"><span class="pre">k</span></code>) and potentially higher FPS.</p>
+<p>The simplest QSP is created by designating a garbage dump activity zone,
+dumping the items you want to store and then reclaiming them when you are
+ready to use them. If you place this garbage dump on top of an existing
+stockpile, the dumped items will automatically be considered part of the
+stockpile, allowing the use of stockpile links to distribute the items to
+workshops or other stockpiles.</p>
+</div></blockquote>
+<p>Also, using quantum stockpiles helps alleviate the need to use bins and barrels
+for the storage of certain items. If for no other reason, I highly suggest you
+learn this stockpiling technique so that you will stop suffering at the hands
+of the buggy game code correlated with those two storage containers.</p>
+</div>
+<div class="section" id="the-minecart-quantum-stockpile">
+<h3><a class="toc-backref" href="#id17">The Minecart Quantum Stockpile</a><a class="headerlink" href="#the-minecart-quantum-stockpile" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you’re following along in your own fort, Take a moment to go to
+your Carpenter’s Workshop and queue up a bunch of wooden wheelbarrows and
+minecarts so that they are available. In Part 1, you will need at least 6
+available wheelbarrows and 2 minecarts.</p>
+</div>
+<p>The <a class="reference external" href="http://dwarffortresswiki.org/Quantum_stockpile#The_Minecart_Stop">Minecart Stop Quantum Stockpile</a> is my quantum stockpiling technique of
+choice for the following reasons:</p>
+<ul class="simple">
+<li>Ease of setup</li>
+<li>Ease of understanding</li>
+<li>Scalability</li>
+<li>Customization</li>
+</ul>
+<p>For the purposes of this stockpiling guide, we
+will not delve deep into the minecart related topics. We will only use the bits
+we need for stockpiling. For further education on minecarts, refer to the
+Minecart masterclass.</p>
+<p>The Minecart Stop Quantum Stockpile (<abbr title="Minecart Quantum Stockpile">MQS</abbr>)
+works by taking advantage of the “dump” feature of minecart track stops. A
+track stop is simply a construction you can build on the floor and place a
+minecart on. A track stop, when being built, can be configured to dump in a
+certain direction (N, S, E, W). When a minecart with items is detected on the
+stop, the minecart will dump its contents to the single tile in the direction
+specified. If this happens multiple times, the contents of that single tile
+will stack and a quantum stockpile is formed. In theory this dump tile can have
+an unlimited amount of items on it.</p>
+<p>The Minecart Quantum Stockpile is the foundation of the Better Stockpiling
+Method and will be used extensively throughout this masterclass.</p>
+<p>In its simplest terms, the <abbr title="Minecart Quantum Stockpile">MQS</abbr> works like this:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>rrr     r receiving stockpile, usually 2x3 or 4x3
+rrr     S track stop, set to dump south
+ S        has a minecart on top of it
+ d      d distribution stockpile, 1x1
+</pre></div>
+</div>
+<p>You have a receiving stockpile that grabs the items you wish to be quantum
+stockpiled.</p>
+<p>Those items are then placed in to a minecart, sitting on a track stop, that is
+set to dump in a certain direction..</p>
+<p>You then create a <code class="kbd docutils literal"><span class="pre">h</span></code> auling route detailing which items you want to take from
+the receiving stockpile and which minecart to put them in. Once the appropriate
+conditions are met, the minecart will be dumped in the direction you have set
+and the contents will land on the 1x1 distribution stockpile.</p>
+<p>You now only have a 4x3 stockpile footprint which can potentially hold every
+item in your fortress. This is an incredibly powerful tool.</p>
+</div>
+<div class="section" id="two-simple-variations-of-the-minecart-quantum-stockpile">
+<h3><a class="toc-backref" href="#id18">Two Simple Variations of the Minecart Quantum Stockpile</a><a class="headerlink" href="#two-simple-variations-of-the-minecart-quantum-stockpile" title="Permalink to this headline">¶</a></h3>
+<p>We now take the vanilla <abbr title="Minecart Quantum Stockpile">MQS</abbr> and refine in one extra step by splitting them in
+to two different varieties:</p>
+<ul class="simple">
+<li>Heavy Items</li>
+<li>Light Items</li>
+</ul>
+<p><strong>Why?</strong>  We split them because some items have different weights and affect
+the speed of a dwarf while their hauling things around. You might have noticed
+a dwarf hauling a stone from your mining layers dozens of z-levels to your
+mason workshops above. Sometimes they will spend months or entire seasons
+hauling one stone.</p>
+<p>These heavier items are moved faster with wheelbarrows. Having a dwarf path to
+the stockpile to grab a wheelbarrow, and then go get that item and bring it
+back to the stockpile, is usually a much more efficient use of a dwarf’s time
+than to have him/her hauling a single stone to the stockpile for an entire
+season.</p>
+<p>For light items, there’s no need to use a wheelbarrow as the added weight of
+carrying the light hauled item doesn’t affect the dwarf’s movement speed.
+Indeed, using a wheelbarrow might even make the hauling job take longer as the
+hauler must first fetch the wheelbarrow and then go to the item’s location.</p>
+<p><em>Don’t fret!</em> You musn’t learn the dwarven weight system nor memorize the
+weights of every item. Simple remember this short list of <strong>heavy items</strong>:</p>
+<ul class="simple">
+<li>Stones</li>
+<li>All furniture</li>
+<li>Metal and Wooden Empty Cages</li>
+<li>Corpses of humanoid and larger sizes</li>
+</ul>
+<p>These items will only be assigned to your Heavy Items <abbr title="Minecart Quantum Stockpile">MQS</abbr>. All other items can
+be assigned to the Light Items <abbr title="Minecart Quantum Stockpile">MQS</abbr> (with some notable exceptions, such as food,
+continue onward for these exceptions).</p>
+</div>
+<div class="section" id="example-1-creating-a-heavy-items-minecart-quantum-stockpile">
+<h3><a class="toc-backref" href="#id19">Example 1: Creating a Heavy Items Minecart Quantum Stockpile</a><a class="headerlink" href="#example-1-creating-a-heavy-items-minecart-quantum-stockpile" title="Permalink to this headline">¶</a></h3>
+<p>For this example, we will start out with a stockpile I’ve created that is
+grabbing Wood and Stones from anywhere on the map.</p>
+<div class="figure" id="id1">
+<img alt="../_images/stockpile1-1.png" src="../_images/stockpile1-1.png" />
+<p class="caption"><span class="caption-text">Our Example Stockpile of stone and wood</span></p>
+</div>
+<div class="figure" id="id2">
+<img alt="../_images/stockpile1-2.png" src="../_images/stockpile1-2.png" />
+<p class="caption"><span class="caption-text">Example Stockpile Settings</span></p>
+</div>
+<p>In reality, when you go to setup your Minecart Quantum Stockpiles for your
+Primary Materials Stockpiles (which are discussed in Part 2 of this
+masterclass) your Minecart Quantum Stockpile receiver stockpiles will be ones
+set to take from anywhere on the map, as opposed to this example where the
+receiver stockpiles are set to take from links.</p>
+<div class="section" id="prepare-a-heavy-items-mqs-for-stone">
+<h4><a class="toc-backref" href="#id20">1. Prepare a Heavy Items <abbr title="Minecart Quantum Stockpile">MQS</abbr> for Stone</a><a class="headerlink" href="#prepare-a-heavy-items-mqs-for-stone" title="Permalink to this headline">¶</a></h4>
+<div class="figure" id="id3">
+<img alt="../_images/stockpile1-3.png" src="../_images/stockpile1-3.png" />
+<p class="caption"><span class="caption-text">Designating the stockpiles for a heavy item MQS.</span></p>
+</div>
+<ol class="loweralpha simple">
+<li>Create two 2x3 Receiver Stone Stockpiles directly north-south of
+eachother using <code class="kbd docutils literal"><span class="pre">p</span></code>, <code class="kbd docutils literal"><span class="pre">s</span></code></li>
+<li>Skip a single space south and create a 1x1 Stone Stockpile. This 1x1
+Stockpile is what will become your Quantum Stockpile. Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> to close
+out the Stockpile Menu.</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">C</span></code>, <code class="kbd docutils literal"><span class="pre">S</span></code> to open the Track Stop Menu. Move
+your cursor to the empty middle space between your Receiver Stockpiles and
+Quantum Stockpiles. The Track Stop needs to be right next to your Quantum
+Stockpile, so it can dump into it. The Track Stop <em>does not</em> have to be
+adjacent to the Receiver Stockpile.  Press <code class="kbd docutils literal"><span class="pre">d</span></code> twice to change the
+dump direction to <span class="guilabel">South</span> before pressing <code class="kbd docutils literal"><span class="pre">Enter</span></code> to place
+the Track Stop.</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> twice to get back to the main menu.</li>
+<li><code class="kbd docutils literal"><span class="pre">q</span></code> uery over your two Receiver Stockpiles and press <code class="kbd docutils literal"><span class="pre">w</span></code>  until you have 3 Wheelbarrows set for each</li>
+<li><code class="kbd docutils literal"><span class="pre">q</span></code> uery over your Quantum Stockpile, and set Wheelbarrows to 0</li>
+</ol>
+<div class="figure" id="id4">
+<img alt="../_images/stockpile1-4.gif" src="../_images/stockpile1-4.gif" />
+<p class="caption"><span class="caption-text">A Mechanic will build the Trackstop. Dwarves deliver the Wheelbarrows</span></p>
+</div>
+<p><strong>For the sake of this example</strong>, we will change the settings of our Receiver Stone Stockpiles
+to take from that example Stockpile we created that is grabbing Stones and
+Wood. Once we make these changes, the dwarves will start hauling items to the
+Receiver Stockpiles and stop once they are full of Stones.</p>
+<ol class="loweralpha simple" start="7">
+<li><code class="kbd docutils literal"><span class="pre">q</span></code> uery over the two Receiver Stockpiles and press <code class="kbd docutils literal"><span class="pre">t</span></code> to take from links and target the Example Stockpile. Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> when done.</li>
+</ol>
+<div class="figure" id="id5">
+<img alt="../_images/stockpile1-5.gif" src="../_images/stockpile1-5.gif" />
+<p class="caption"><span class="caption-text">Making the Receiver Stone Stockpiles take from our Example stockpile. This
+step is for this example only. Usually these receiver stockpiles will take
+from anywhere.</span></p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Why use two 2x3 Receiver Stockpiles?</p>
+<p class="last">We use the 2x3 size for the Heavy Item Receiver Stockpiles to accommodate the
+use of Wheelbarrows. You can only use 3 Wheelbarrows per stockpile. If your
+stockpile is 12 spaces in size total, and if you’re using 3 Wheelbarrows, that
+leaves you with the potential to generate 3 hauling jobs at a time. The
+Wheelbarrows take up one of the spaces of your Stockpile. We create two 2x3
+Receiver Stockpiles so that 6 hauling jobs can be generated at a time without
+wasted space.</p>
+</div>
+</div>
+<div class="section" id="create-the-stone-hauling-route">
+<h4><a class="toc-backref" href="#id21">2. Create the Stone Hauling Route</a><a class="headerlink" href="#create-the-stone-hauling-route" title="Permalink to this headline">¶</a></h4>
+<div class="figure" id="id6">
+<img alt="../_images/stockpile1-6.gif" src="../_images/stockpile1-6.gif" />
+<p class="caption"><span class="caption-text">Creating the stone hauling route. Steps outlined below.</span></p>
+</div>
+<ol class="loweralpha simple">
+<li>Press <code class="kbd docutils literal"><span class="pre">h</span></code>  to bring up the Hauling Routes Menu</li>
+<li>Move your cursor and place it directly over your Track Stop. Press <code class="kbd docutils literal"><span class="pre">r</span></code>  to create a new Route</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">n</span></code>  to name it. (For this example, type in <span class="guilabel">StoneExample</span> and press <code class="kbd docutils literal"><span class="pre">Enter</span></code> when done)</li>
+<li>With the cursor still directly over the Track Stop, press <code class="kbd docutils literal"><span class="pre">s</span></code>  to create a new Stop</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">Enter</span></code> to define the Stop Settings</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">x</span></code>  three times to remove the three default Guide conditions</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">Enter</span></code> to define what items you want to be placed in to this Minecart. This should match the Stockpile settings you have setup on your Receiver Stockpiles. In this example, our Receiver Stockpiles are just all Stones. So, scroll down and press <code class="kbd docutils literal"><span class="pre">e</span></code>  on Stone to enable it. Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> when you’re done</li>
+<li>You now need to choose the Receiver Stockpiles that you want to grab the Stones from to be placed in the Minecart. Move your cursor up one space, to the nearest Receiver Stockpile, and then Press <code class="kbd docutils literal"><span class="pre">s</span></code> . You will see a new <span class="guilabel">Take From Stone Stockpile</span> entry at the upper right</li>
+<li>Move your cursor up to the top Receiver Stockpile and Press <code class="kbd docutils literal"><span class="pre">s</span></code>  again. You will now see the two different <span class="guilabel">Take From Stone Stockpile</span> entries at the upper right</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> once you are done selecting to <span class="guilabel">Take From</span> your Receiver Stockpiles</li>
+<li>You will now be at the Hauling Menu, and you will see your StoneExample Hauling route and the one Stop associated with it. With the <span class="guilabel">Stop 1</span> highlighted, press <code class="kbd docutils literal"><span class="pre">v</span></code>  to choose a minecart. The quality or material of the minecart is irrelevant for general hauling. Select whichever minecart you want to use by highlighting it and pressing <code class="kbd docutils literal"><span class="pre">Enter</span></code> to assign the vehicle</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> to exit the Hauling menu</li>
+</ol>
+<div class="figure" id="id7">
+<img alt="../_images/stockpile1-7.gif" src="../_images/stockpile1-7.gif" />
+<p class="caption"><span class="caption-text">Unpause the game and a dwarf will come and place the Minecart for your newly
+created Hauling Route. Once that is done, all dwarves enabled for Stone Hauling
+will start placing Stone in to the Minecart and then dumping it on to
+the 1x1 Stone Stockpile, while at the same time continuing to re-populate the
+Receiver Stockpile.</span></p>
+</div>
+<div class="figure" id="id8">
+<img alt="../_images/stockpile1-8.gif" src="../_images/stockpile1-8.gif" />
+<p class="caption"><span class="caption-text">Let’s take a look at the Contents of our Stone Quantum Stockpile.</span></p>
+</div>
+<p>If you’ve set everything up correctly, you should be the proud owner of a Stone
+Quantum Stockpile.  The initial Example Stockpile will soon be emptied of
+stones and be left with only wood logs.</p>
+</div>
+</div>
+<div class="section" id="example-2-creating-a-light-items-minecart-quantum-stockpile">
+<h3><a class="toc-backref" href="#id22">Example 2: Creating a Light Items Minecart Quantum Stockpile</a><a class="headerlink" href="#example-2-creating-a-light-items-minecart-quantum-stockpile" title="Permalink to this headline">¶</a></h3>
+<p>For this example, we will be using the same wood and stones Example Stockpile
+created in Example 1.</p>
+<p>We will create a Light Items Wood Quantum Stockpile to haul away the wood logs
+into a MQS.</p>
+<p>Creating a Light Items Minecart Quantum Stockpile follows the same steps as
+creating a Heavy Items MQS.</p>
+<div class="section" id="prepare-a-light-mqs-for-wood">
+<h4><a class="toc-backref" href="#id23">1. Prepare a Light <abbr title="Minecart Quantum Stockpile">MQS</abbr> for Wood</a><a class="headerlink" href="#prepare-a-light-mqs-for-wood" title="Permalink to this headline">¶</a></h4>
+<div class="figure">
+<img alt="../_images/stockpile1-9.gif" src="../_images/stockpile1-9.gif" />
+</div>
+<ol class="loweralpha simple">
+<li>Create a 4x3 Wood Stockpile with <code class="kbd docutils literal"><span class="pre">p</span></code>, <code class="kbd docutils literal"><span class="pre">w</span></code>.  This will be your Receiver Stockpile.</li>
+<li>Skip a space for where you will build your Track Stop and create a 1x1 Wood Stockpile. This will be your Quantum Stockpile. Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> when done.</li>
+<li><code class="kbd docutils literal"><span class="pre">q</span></code> uery over your two Stockpiles and press <code class="kbd docutils literal"><span class="pre">w</span></code>  until you have 0 Wheelbarrows set for each. <strong>Remember:</strong> we do not want to use Wheelbarrows for light items.</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">t</span></code>  to take from links and target the Example Stockpile. Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> when done.</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">b</span></code>, <code class="kbd docutils literal"><span class="pre">C</span></code>, <code class="kbd docutils literal"><span class="pre">S</span></code> to open the Track Stop Menu. Move your cursor to the empty middle space between your Receiver Stockpiles and Quantum Stockpiles. The Track Stop needs to be right next to your Quantum Stockpile. It <em>does not</em> have to be adjacent to the Receiver Stockpile. Press <code class="kbd docutils literal"><span class="pre">d</span></code>  twice to change the dump direction to South before pressing <code class="kbd docutils literal"><span class="pre">Enter</span></code> to place the Track Stop.</li>
+<li>Select your build material and press <code class="kbd docutils literal"><span class="pre">Enter</span></code> to build the Tack Stop. Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> twice to get back to the main menu.</li>
+</ol>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p><strong>Why 4x3?</strong></p>
+<p class="last">Because 12 simultaneous Wood Log hauling jobs is reasonable to me, and its size
+also matches up exactly with the 2 2x3 Heavy Items Receiver Stockpiles. Feel
+free to use whatever size Receiver Stockpile you wish, and as <em>many</em> Receiver
+Stockpiles as you wish.</p>
+</div>
+<div class="figure" id="id9">
+<img alt="../_images/stockpile1-10.gif" src="../_images/stockpile1-10.gif" />
+<p class="caption"><span class="caption-text">A Mechanic will build the Track Stop and your Wood Haulers fill the Receiver Stockpile</span></p>
+</div>
+</div>
+<div class="section" id="create-the-wood-hauling-route">
+<h4><a class="toc-backref" href="#id24">2. Create the Wood Hauling Route</a><a class="headerlink" href="#create-the-wood-hauling-route" title="Permalink to this headline">¶</a></h4>
+<div class="figure" id="id10">
+<img alt="../_images/stockpile1-11.gif" src="../_images/stockpile1-11.gif" />
+<p class="caption"><span class="caption-text">Creating the wood hauling route. Steps outlined below.</span></p>
+</div>
+<ol class="loweralpha simple">
+<li>Press <code class="kbd docutils literal"><span class="pre">h</span></code>  to bring up the Hauling Routes Menu</li>
+<li>Move your cursor and place it directly over your Track Stop. Press <code class="kbd docutils literal"><span class="pre">r</span></code>  to create a new Route.</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">n</span></code>  to name it. (For this example, type in <span class="guilabel">WoodExample</span> and press <code class="kbd docutils literal"><span class="pre">Enter</span></code> when done)</li>
+<li>With the cursor still directly over the Track Stop, press <code class="kbd docutils literal"><span class="pre">s</span></code>  to create a new Stop</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">Enter</span></code> to define the Stop Settings</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">x</span></code>  three times to remove the three default guide conditions</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">Enter</span></code> to define what items you want to be placed in to this Minecart. This should match the Stockpile settings you have setup on your Receiver Stockpiles. In this example, our Receiver Stockpiles are Wood Logs. So, scroll down and press <code class="kbd docutils literal"><span class="pre">e</span></code> on Wood to enable it. Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> when you’re done.</li>
+<li>You now need to choose the Receiver Stockpile that you want to grab the Wood from to be placed in the Minecart. Move your cursor up one space, to the Receiver Stockpile, and then Press <code class="kbd docutils literal"><span class="pre">s</span></code> . You will see a new <span class="guilabel">Take From Wood Stockpile</span> entry at the upper right</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> once you are done selecting to <span class="guilabel">Take From</span> your Receiver Stockpile</li>
+<li>You will now be at the Hauling Menu, and you will see your WoodExample Hauling route and the one Stop associated with it. With the <span class="guilabel">Stop 1</span> highlighted, press <code class="kbd docutils literal"><span class="pre">v</span></code>  to choose a minecart. The quality or material of the minecart is irrelevant for general hauling. Select whichever minecart you want to use by highlighting it and pressing <code class="kbd docutils literal"><span class="pre">Enter</span></code> to assign the vehicle</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">ESC</span></code> to exit the Hauling menu</li>
+</ol>
+<div class="figure" id="id11">
+<img alt="../_images/stockpile1-12.gif" src="../_images/stockpile1-12.gif" />
+<p class="caption"><span class="caption-text">A Dwarf will place the Minecart for your Wood Hauling Route. Once done, Dwarves enabled for Wood Hauling will come and place Wood in the Minecart and then dump it on to the 1x1 Stone Stockpile</span></p>
+</div>
+<div class="figure" id="id12">
+<img alt="../_images/stockpile1-13.gif" src="../_images/stockpile1-13.gif" />
+<p class="caption"><span class="caption-text">Let’s take a look at our Wood Quantum Stockpile after having let the game run for a bit.</span></p>
+</div>
+<p>If you’ve set everything up correctly, you should be the proud owner of a Wood
+Logs Minecart Quantum Stockpile.</p>
+</div>
+</div>
+<div class="section" id="name-your-quantum-stockpiles-using-dfhack">
+<h3><a class="toc-backref" href="#id25">Name Your Quantum Stockpiles Using DFHack</a><a class="headerlink" href="#name-your-quantum-stockpiles-using-dfhack" title="Permalink to this headline">¶</a></h3>
+<p>Since you’ll probably be using these stockpiles to feed other stockpiles and
+workshops, let’s give them some proper names.</p>
+<div class="figure">
+<img alt="../_images/stockpile1-14.gif" src="../_images/stockpile1-14.gif" />
+</div>
+<ol class="loweralpha simple">
+<li>Press <code class="kbd docutils literal"><span class="pre">q</span></code>  and highlight your Stone Quantum Stockpile</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">Ctrl</span></code> + <code class="kbd docutils literal"><span class="pre">Shift</span></code> + <code class="kbd docutils literal"><span class="pre">n</span></code> to bring up the name screen.</li>
+<li>Type in a Name for your Stone Quantum Stockpile and then press <code class="kbd docutils literal"><span class="pre">Enter</span></code></li>
+<li>Move your <code class="kbd docutils literal"><span class="pre">q</span></code>  cursor over to your Wood Quantum Stockpile</li>
+<li>Press <code class="kbd docutils literal"><span class="pre">Ctrl</span></code> + <code class="kbd docutils literal"><span class="pre">Shift</span></code> + <code class="kbd docutils literal"><span class="pre">n</span></code> to bring up the name screen.</li>
+<li>Type in a Name for your Wood Quantum Stockpile and then press <code class="kbd docutils literal"><span class="pre">Enter</span></code></li>
+</ol>
+<p>You should now be able to see that the stockpile names have changed at the top
+right of the screen.</p>
+<p><em>Why do you want to name your stockpiles?</em> To be able to see where
+things are being hauled.</p>
+<p>Here is a real-life example of named stockpiles in use:</p>
+<div class="figure">
+<img alt="../_images/stockpile1-15.gif" src="../_images/stockpile1-15.gif" />
+</div>
+<div class="figure" id="id13">
+<img alt="../_images/stockpile1-16.gif" src="../_images/stockpile1-16.gif" />
+<p class="caption"><span class="caption-text">By renaming a Wood Quantum Stockpile Feeder and then using the jobs menu
+<code class="kbd docutils literal"><span class="pre">j</span></code>, you can see <em>WHO</em> is hauling what and <em>WHERE</em> exactly they are
+hauling it.</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="part-2-the-five-primary-stockpiles">
+<h2><a class="toc-backref" href="#id26">Part 2 - The Five Primary Stockpiles</a><a class="headerlink" href="#part-2-the-five-primary-stockpiles" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="part-3-useful-custom-stockpiles">
+<h2><a class="toc-backref" href="#id27">Part 3 - Useful Custom Stockpiles</a><a class="headerlink" href="#part-3-useful-custom-stockpiles" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">Learning (and losing) can be fun!</p>
+
+
+
+
+
+
+
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Better Stockpiling</a><ul>
+<li><a class="reference internal" href="#part-1-intro-to-quantum-stockpiling">Part 1 - Intro to Quantum Stockpiling</a><ul>
+<li><a class="reference internal" href="#the-quantum-stockpile">The Quantum Stockpile</a></li>
+<li><a class="reference internal" href="#the-minecart-quantum-stockpile">The Minecart Quantum Stockpile</a></li>
+<li><a class="reference internal" href="#two-simple-variations-of-the-minecart-quantum-stockpile">Two Simple Variations of the Minecart Quantum Stockpile</a></li>
+<li><a class="reference internal" href="#example-1-creating-a-heavy-items-minecart-quantum-stockpile">Example 1: Creating a Heavy Items Minecart Quantum Stockpile</a><ul>
+<li><a class="reference internal" href="#prepare-a-heavy-items-mqs-for-stone">1. Prepare a Heavy Items <abbr title="Minecart Quantum Stockpile">MQS</abbr> for Stone</a></li>
+<li><a class="reference internal" href="#create-the-stone-hauling-route">2. Create the Stone Hauling Route</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example-2-creating-a-light-items-minecart-quantum-stockpile">Example 2: Creating a Light Items Minecart Quantum Stockpile</a><ul>
+<li><a class="reference internal" href="#prepare-a-light-mqs-for-wood">1. Prepare a Light <abbr title="Minecart Quantum Stockpile">MQS</abbr> for Wood</a></li>
+<li><a class="reference internal" href="#create-the-wood-hauling-route">2. Create the Wood Hauling Route</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#name-your-quantum-stockpiles-using-dfhack">Name Your Quantum Stockpiles Using DFHack</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#part-2-the-five-primary-stockpiles">Part 2 - The Five Primary Stockpiles</a></li>
+<li><a class="reference internal" href="#part-3-useful-custom-stockpiles">Part 3 - Useful Custom Stockpiles</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, PeridexisErrant.
+      
+      |
+      <a href="../_sources/masterclass/better-stockpiling.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

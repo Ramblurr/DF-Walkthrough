@@ -1,0 +1,258 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Contributing to this project &#8212; PeridexisErrant&#39;s DF Walkthrough</title>
+    <link rel="stylesheet" href="../_static/dftext.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/df-icon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Setting up your install" href="setting-up.html" />
+    <link rel="prev" title="Sharing and resuse" href="../LICENSE.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="contributing-to-this-project">
+<h1>Contributing to this project<a class="headerlink" href="#contributing-to-this-project" title="Permalink to this headline">¶</a></h1>
+<p>Are you interested in contributing to this project, or just interested
+in learning what goes into it?  Then this is the page for you!</p>
+<p>You can <a class="reference external" href="https://github.com/PeridexisErrant/DF-Walkthrough">find the project on Github</a>.</p>
+<p>There are two main areas of work:  maintaining and improving the
+existing content (walkthrough chapters and tutorials), and adding
+new tutorials.  It would be great if you wanted to help out!</p>
+<p>I’m also very happy to take bug reports - just send me a message about
+small errors, typos, or formatting problems.  Larger issues about content
+should be reported on the Github issue tracker, so I’m not the only one
+who can work on them.</p>
+<p>You can also <a class="reference external" href="https://www.patreon.com/PeridexisErrant">support me on Patreon</a>
+if this sounds like a lot of work.</p>
+<div class="section" id="how-to-turn-text-into-the-website">
+<h2>How to turn text into the website<a class="headerlink" href="#how-to-turn-text-into-the-website" title="Permalink to this headline">¶</a></h2>
+<p>Anyone who wants to contribute content, fix a bug, or just have an offline
+copy needs to turn the text files into the website.  Luckily, this is
+pretty easy!  You only need two things installed:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.python.org">Python</a>.
+If you’re on OSX or Linux, Python is probably already installed.
+If it isn’t, or you’re on Windows, install it from the site above.</li>
+<li><a class="reference external" href="http://sphinx-doc.org">Sphinx</a>.  With Python installed, just run
+<code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">Sphinx</span></code> in a terminal / command prompt.  If you’re
+using an old Python version and that doesn’t work, the site has
+alternative install instructions.</li>
+</ul>
+<p>Get the code from the GitHub repo, either by forking the repo if you want
+to contribute, or using the ‘download ZIP’ option and unzipping the folder.</p>
+<p>Congratulations, you now have the text!  There’s only one more step:
+open a command prompt in the DF-Walkthrough folder, and run <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code></p>
+<p>That’s it!</p>
+</div>
+<div class="section" id="authors-and-contributors">
+<h2>Authors and Contributors<a class="headerlink" href="#authors-and-contributors" title="Permalink to this headline">¶</a></h2>
+<p><em>Anyone who’s contributed more than a bug report should be here -
+add yourself if you’re not!</em></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="24%" />
+<col width="76%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Person</th>
+<th class="head">Contribution</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>PeridexisErrant</td>
+<td>Project leader, editor, maintainer; does some of everything</td>
+</tr>
+<tr class="row-odd"><td>TinyPirate</td>
+<td>Author and inspiration for project</td>
+</tr>
+<tr class="row-even"><td>/u/buschwacker</td>
+<td>Contributed chapters and many, many images</td>
+</tr>
+<tr class="row-odd"><td>/u/Mechanixm</td>
+<td>Wrote a great masterclass series</td>
+</tr>
+<tr class="row-even"><td>Larix</td>
+<td>Wrote the Minecart masterclass</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="contribution-standards">
+<h2>Contribution standards<a class="headerlink" href="#contribution-standards" title="Permalink to this headline">¶</a></h2>
+<p>This section describes the target standard for the project.
+Not all pages will meet it, and that’s OK.  Don’t let them stop you
+adding something - but feel free to apply them to existing content!</p>
+<div class="section" id="content">
+<h3>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h3>
+<p>The walkthrough chapters cover core knowledge, with a clear progression
+of skills. If a topic can be put in a self-contained tutorial, it should
+be.  Prefer linking to a tutorial over adding a section to the walkthrough.</p>
+<p>The tutorials each cover a single, self-contained topic.  Tutorials
+are aimed at players who have just finished the walkthrough.  They
+introduce core topics not covered in the walkthrough.</p>
+<p>A masterclass is like a tutorial, but covering an advanced topic for
+experienced players.</p>
+</div>
+<div class="section" id="style">
+<h3>Style<a class="headerlink" href="#style" title="Permalink to this headline">¶</a></h3>
+<p>Use clear, direct, and simple language.  Avoid jargon or the passive voice.
+I find the <a class="reference external" href="http://www.hemingwayapp.com">hemmingway editor</a> useful;
+I often ignore but always consider it’s suggestions.</p>
+<p>Keep all lines to 80 characters or less.  Sphinx will automatically join
+everything between blank lines into one paragraph, and short lines
+make the raw text easier to read for editors.  More importantly, short
+lines make version-control software much more useful.  When writing
+new text, keep to about 70 characters to avoid many lines changing for
+small edits later.  Do not use tabs or leave trailing whitespace.</p>
+<p>You can check with <code class="docutils literal"><span class="pre">python</span> <span class="pre">misc/lint.py</span> <span class="pre">&amp;&amp;</span> <span class="pre">make</span> <span class="pre">clean</span> <span class="pre">&amp;&amp;</span> <span class="pre">make</span> <span class="pre">html</span></code> -
+this sequence of commands should always run without errors, or
+at least give warnings about specific files and line numbers!</p>
+</div>
+<div class="section" id="markup">
+<h3>Markup<a class="headerlink" href="#markup" title="Permalink to this headline">¶</a></h3>
+<p>Markup should be fairly minimal and let readers focus on the text.
+Basic markup helps with this, and should be used where appropriate.
+If in doubt, just match the surrounding sections.</p>
+<p>Headings:</p>
+<ul class="simple">
+<li>File headings over- and underlined with <code class="docutils literal"><span class="pre">#####</span></code></li>
+<li>Section headings underlined with <code class="docutils literal"><span class="pre">====</span></code></li>
+<li>Subsections generally avoided, but underlined with <code class="docutils literal"><span class="pre">----</span></code> otherwise</li>
+</ul>
+<p>Lists:</p>
+<ul class="simple">
+<li>Bulleted lists use <code class="docutils literal"><span class="pre">*</span></code> and one space.  Use these instead of a paragraph
+for sections such as a list of examples or sequence of commands.</li>
+<li>Use numbered lists only when the ordering is both important and unclear
+from context.  Use <code class="docutils literal"><span class="pre">#.</span></code> and one space, so renumbering will be automatic
+if the list is changed later.</li>
+</ul>
+<p>Special text:</p>
+<ul class="simple">
+<li>Use bold, italics, etc. very sparingly - add meaning, not just emphasis.</li>
+<li>For keybindings, use the <code class="docutils literal"><span class="pre">:kbd:`Key`</span></code> directive, which is rendered
+with the special style.  Keys are case sensitive, so <code class="docutils literal"><span class="pre">:kbd:`Shift`</span></code>
+should never be used (unlike <code class="kbd docutils literal"><span class="pre">Esc</span></code>, <code class="kbd docutils literal"><span class="pre">Space</span></code>, etc.).</li>
+<li>For in-game text, use the <code class="docutils literal"><span class="pre">:guilabel:`In</span> <span class="pre">game</span> <span class="pre">text`</span></code> directive, which
+is rendered with the appropriate font and background.  Ensure that phrasing
+and capitalisation matches DF exactly (except <code class="docutils literal"><span class="pre">'</span></code>, which renders as
+<span class="guilabel">‘</span> - leave it out).  Don’t use this style for ASCII art, only
+ingame menus which should be read as text.</li>
+</ul>
+<p>Tips:</p>
+<ul class="simple">
+<li>Image names must not contain spaces</li>
+<li>Text files should be encoded in UTF-8 (your editor should have an option
+for this)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="todo-list">
+<h2>TODO list<a class="headerlink" href="#todo-list" title="Permalink to this headline">¶</a></h2>
+<p><em>There’s a lot to do; this list is roughly in order of priority but
+items may be done in other orders for whatever reason.</em></p>
+<ol class="arabic simple">
+<li>Update remaining images</li>
+<li>Run everything through Hemmingway</li>
+<li>Add more tutorials; eg modding, quantum stockpiles, graphics, etc</li>
+<li>Add an adventure mode walkthrough</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/logo.png" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">Learning (and losing) can be fun!</p>
+
+
+
+
+
+
+
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Contributing to this project</a><ul>
+<li><a class="reference internal" href="#how-to-turn-text-into-the-website">How to turn text into the website</a></li>
+<li><a class="reference internal" href="#authors-and-contributors">Authors and Contributors</a></li>
+<li><a class="reference internal" href="#contribution-standards">Contribution standards</a><ul>
+<li><a class="reference internal" href="#content">Content</a></li>
+<li><a class="reference internal" href="#style">Style</a></li>
+<li><a class="reference internal" href="#markup">Markup</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#todo-list">TODO list</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, PeridexisErrant.
+      
+      |
+      <a href="../_sources/misc/contributing.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
