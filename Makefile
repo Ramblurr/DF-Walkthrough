@@ -40,6 +40,12 @@ help:
 clean:
 	rm -rf $(BUILDDIR)/*
 
+css:
+	sassc misc/_static/dftext.scss misc/_static/dftext.css
+
+livehtml:
+	sphinx-autobuild -b html -z misc --ignore "*.~" $(ALLSPHINXOPTS) $(BUILDDIR)/html
+
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo

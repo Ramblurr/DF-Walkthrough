@@ -3,7 +3,10 @@ Training Archers
 ################
 
 
-Source: :reddit:`Mechanixm's Archery Training Primer <2k65yc>`
+Source:
+:reddit:`Mechanixm's Guide to Better Stockpiling: Part 1 - Intro to Quantum Stockpiling <2k0zb3>`
+:reddit:`Mechanixm's Guide to Better Stockpiling: Part 2 - The Five Primary Stockpiles <2kuvs1>`
+:reddit:`Mechanixm's Guide to Better Stockpiling: Part 3 - Useful Custom Stockpiles <2n9p3u>`
 
 .. image:: images/archery01.gif
    :align: center
